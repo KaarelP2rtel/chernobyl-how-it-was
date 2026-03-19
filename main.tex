@@ -35,6 +35,7 @@
 
 \usepackage{microtype}
 \microtypesetup{protrusion=true,expansion=true}
+\usepackage{soul} % for \ul (line-breakable underline)
 
 % Graphics, colors, hyperlinks
 \usepackage{graphicx,xcolor}
@@ -144,7 +145,7 @@ Upon his assignment, he entered the Lenin Komsomol Shipbuilding Plant at Komsomo
 
 During the catastrophe of 26~April~1986, Dyatlov sustained an exposure of no less than \qty{550}{\rem}. The Supreme Court of the USSR, by its verdict, declared him among those responsible for the disaster and condemned him to ten years' imprisonment in a general-regime labor colony. He served his sentence in the settlement of Kryukovo, Poltava Region.
 
-After repeated pleas from scientific institutions, friends, and from A.~D.~Sakharov himself -- later, following Sakharov's death, from E.~G.~Bonner--Dyatlov was granted early release on 1~October~1990, under Article~220 on grounds of illness. The progress of his radiation sickness was swift and inexorable. Despite the attentive care of German physicians -- he was twice yearly a patient, from 1991 onward, in the burn department of the University Clinic of Munich -- Anatoly Stepanovich Dyatlov passed away on 13~December~1995.
+After repeated pleas from scientific institutions, friends, and from A.~D.~Sakharov himself -- later, following Sakharov's death, from E.~G.~Bonner -- Dyatlov was granted early release on 1~October~1990, under Article~220 on grounds of illness. The progress of his radiation sickness was swift and inexorable. Despite the attentive care of German physicians -- he was twice yearly a patient, from 1991 onward, in the burn department of the University Clinic of Munich -- Anatoly Stepanovich Dyatlov passed away on 13~December~1995.
 
 \chapter*{Note from the Translator}
 \addcontentsline{toc}{chapter}{Note from the Translator}
@@ -179,7 +180,7 @@ In the earliest weeks, the radiological environment was governed by short-lived 
 
 The consequences were most dire for the Republic of Belarus: nearly one-quarter of its territory lay within the zone of contamination, embracing \num{3678}~inhabited~localities and about one-fifth of the population.
 
-Within the European portion of the former USSR, the lands polluted by cesium-137 in excess of one curie per square kilometre comprised \num{3.2}~percent of the total area, while contamination exceeding \num{0.2}~curie extended over \num{23}~percent. In the Russian Federation, twenty-nine administrative regions were affected, most severely the Bryansk, Tula, Kaluga, Ryazan, and Penza districts, together containing some \num{2.3}~million inhabitants within the tainted zone.
+Within the European portion of the former USSR, the lands polluted by cesium-137 in excess of one curie per square kilometre comprised \num{3.2}~percent of the total area, while contamination exceeding \num{0.2}~curie extended over \num{23}~percent. In the Russian Federation, nineteen administrative regions were affected, most severely the Bryansk, Tula, Kaluga, Ryazan, and Penza districts, together containing some \num{2.3}~million inhabitants within the tainted zone.
 
 Even fifteen years after the event, the causes of the accident and the measure of human responsibility remain the subjects of divergent judgment. Among the investigators, the scientist A.~L.~Ilyin, in his work \textit{Realities and Myths of Chernobyl} (p.~79), traced the sequence of occurrences that culminated in the disaster and ascribed the ultimate cause to defects inherent in the design of the RBMK reactor, particularly to its positive void -- or steam -- coefficient of reactivity.
 
@@ -771,7 +772,7 @@ In addition to the on-duty operators, the control room at that moment contained:
 \item Electrical Department workers (Suryadny, Lysyuk, Orlenko);
 \item Representatives of the commissioning enterprise (Palamarchuk);
 \item The Deputy Head of the Turbine Department (Davletbayev);
-\item From the previous shift, Yury~Tregub and Sergei~Razin, who remained to observe;
+\item From the previous shift, Yury~Tregub and Sergei~Gazin, who remained to observe;
 \item The Chief of the Reactor Department's shift (V.~Perevozchenko);
 \item Trainees Proskuryakov and Kudryavtsev.
 \end{itemize}
@@ -894,7 +895,7 @@ A curious claim has circulated through documents for five years: that at high to
 
 After the power dip, hydraulic resistance decreased, and flow through two or three Main Circulation Pumps exceeded the level permissible for the available feedwater rate. Those pumps could have broken suction -- i.e., ceased to deliver coolant. The middle-panel operator, B.~Stolyarchuk, was occupied with regulating level in the steam drum-separators and had no time to adjust pump flow. Even if three of eight pumps had broken suction, the remaining five would have been sufficient to remove heat at that power. The objective monitoring system recorded normal operation of all pumps, with no signs of suction break or cavitation, right up to the explosion.
 
-Many judges of the operating staff claim that personnel violated the Operating Regulations and operating instructions to meet a production target. I have described exactly what occurred in the main control room on 26~April~1986. In practice there were almost no violations. The emergency protection -- contrary to countless reports -- were configured exactly as prescribed for this regime; so were the parameters. There was no reason we could not complete the task. Of course, we intended to perform it -- it was a production task, not a youth-club resolution. But no one intended to do it \textit{``at any price.''} The staff had no incentive: no reward for completion, no penalty for delay. Nor was I careless. On this same Unit~4, during a previous outage, at the first stage of a planned power-level test (near nominal power), the emergency protection falsely actuated on primary-circuit overpressure. We traced the cause at once and corrected it. Yet the Operating Regulations require that, before resetting emergency protection and raising power again, the operational reactivity margin be at least fifty control rods. It was not, and I ordered a cool-down without completing the program. 
+Many judges of the operating staff claim that personnel violated the Operating Regulations and operating instructions to meet a production target. I have described exactly what occurred in the main control room on 26~April~1986. In practice there were almost no violations. The emergency protections -- contrary to countless reports -- were configured exactly as prescribed for this regime; so were the parameters. There was no reason we could not complete the task. Of course, we intended to perform it -- it was a production task, not a youth-club resolution. But no one intended to do it \textit{``at any price.''} The staff had no incentive: no reward for completion, no penalty for delay. Nor was I careless. On this same Unit~4, during a previous outage, at the first stage of a planned power-level test (near nominal power), the emergency protection falsely actuated on primary-circuit overpressure. We traced the cause at once and corrected it. Yet the Operating Regulations require that, before resetting emergency protection and raising power again, the operational reactivity margin be at least fifty control rods. It was not, and I ordered a cool-down without completing the program. 
 
 Here, by contrast, everything had been done except one item. We could have carried it out forty days later after the outage. There was no reason to strain beyond limits. Our actions must be judged not by what is known now about the reactor, but by the documentation then in force and the knowledge then available to the operating personnel. As noted, before the \textit{Turbogenerator Run-Down Program} began, reactor parameters were normal; there were no pre-alarm or alarm signals anywhere on the unit.
 
@@ -977,7 +978,7 @@ Furthermore, the prescription of a fifteen-rod minimum in the \textit{Operationa
 
 After the catastrophe, the remaining RBMK units adopted a thirty-rod minimum operational reactivity margin, even with redesigned control rods and some eighty additional fixed absorbers\footnote{\textit{ДП} -- ``supplementary absorbers.''} that notably diminished the steam-void coefficient. Yet it remains an unnatural circumstance that this reactor is most perilous when its excess reactivity is least.
 
-When the stop-valves closed at 01:23:04~a.m., movement of steam to the turbogenerator ceased and revolutions declined. The test should have concluded near \qty{2000}{\rpm}. I cannot say why, but I recall the figure \qty{2370}{\rpm} -- whether at the moment of explosion or when I glanced again at the dials after A.~Akimov spoke with Senior Reactor Operator L.~Toptunov. All proceeded calmly, without deviation from the expected. In the first moments after pressing AZ-5, none nearby betrayed concern. The centralized monitoring systems -- specifically the DREG\footnote{Generic abbreviation for the diagnostic parameter recording program.} -- registered no parameter variations up to 01:23:40~a.m., the moment the button was pressed, that might have justified a manual Emergency Protection. The commission of the State Committee for Industrial and Nuclear Power Oversight, chaired by V.~O.~Brunsh, gathered and analysed extensive material and, as its report records, could not determine any credible cause for the Emergency Protection actuation. There was none to find: the reactor was being shut down at the end of work.
+When the stop-valves closed at 01:23:04~a.m., movement of steam to the turbogenerator ceased and revolutions declined. The test should have concluded near \qty{2000}{\rpm}. I cannot say why, but I recall the figure \qty{2370}{\rpm} -- whether at the moment of explosion or when I glanced again at the dials after A.~Akimov spoke with Senior Reactor Operator L.~Toptunov. All proceeded calmly, without deviation from the expected. In the first moments after pressing AZ-5, none nearby betrayed concern. The centralized monitoring systems -- specifically the DREG\footnote{Generic abbreviation for the diagnostic parameter recording program.} -- registered no parameter variations up to 01:23:40~a.m., the moment the button was pressed, that might have justified a manual Emergency Protection. The commission of the State Committee for Industrial and Nuclear Power Oversight, chaired by N.~A.~Steinberg, gathered and analysed extensive material and, as its report records, could not determine any credible cause for the Emergency Protection actuation. There was none to find: the reactor was being shut down at the end of work.
 
 I have already stated what I witnessed. There is likewise the testimony of G.~P.~Metlenko, seated at the shift-superintendent's desk near Akimov and Toptunov; his words are preserved on tape. In a letter to me he wrote of that command: \textit{``The process was proceeding calmly, and he gave the command in a calm voice, turning half-round and making a slight gesture; thereafter there was the impression of a rolling water-hammer.''}\footnote{A \textit{water hammer} is a shock wave in pipes caused by a sudden change in water flow -- producing a loud, heavy thudding or rumbling noise, often felt as vibration.}
 
@@ -1166,7 +1167,7 @@ But, as is customary in our country (and I speak not from Chernobyl alone), inve
 \section{The Meshkov Commission}
 
 \begin{personal}[Principal conclusion of the Meshkov Commission:]
-\textit{``The most probable cause of the explosion was boiling-up of the reactor core with rapid drying-out of the process channels as a result of a cavitation regime in the main circulation pumps (GCPs).''}
+\textit{``The most probable cause of the explosion was boiling-up of the reactor core with rapid drying-out of the process channels as a result of a cavitation regime in the main circulation pumps (MCPs).''}
 \end{personal}
 
 The explosion occurred \qty{42.5}{\second} after closure of the turbine steam-valves, that is, at 01:23:46.5 a.m. Everything else in the report serves only to bolster this version.
@@ -1221,7 +1222,7 @@ I shall quote the document with some abridgment. It merits citation not because 
 \begin{enumerate}
 \setcounter{enumi}{4}
 \item \textit{Flow through some pumps exceeded the \qty{7000}{\meter\cubed\per\hour} limit when feedwater flow is below \qty{500}{\tonne\per\hour}.}
-\item \textit{During the \num{12}-minute transient the thermal power fell to \qtyrange[range-phrase=\text{--}]{40}{60}{\mega\watt}, operating reactivity margin dropped below permissible minimum, reaching eight ro  ds one minute before the accident; reactor power at \qty{200}{\mega\watt} deviated from program.}
+\item \textit{During the \num{12}-minute transient the thermal power fell to \qtyrange[range-phrase=\text{--}]{40}{60}{\mega\watt}, operating reactivity margin dropped below permissible minimum, reaching eight rods one minute before the accident; reactor power at \qty{200}{\mega\watt} deviated from program.}
 \end{enumerate}
 \end{personal}
 
@@ -1236,7 +1237,7 @@ The expert group noted that to determine operating reactivity margin an operator
 \item \textit{Fundamentally incorrect control-rod design introducing positive reactivity at initial insertion.}
 \item \textit{Positive void coefficient.}
 \item \textit{Existence of positive prompt-power coefficient (contrary to prior assertions).}
-\item \textit{Pump operation at low power with high total flow and small feedwater flow (not prohibited).}
+\item \textit{Pump operation at low power with high total flow (\qty{56000}{\meter\cubed\per\hour}) and small feedwater flow (not prohibited).}
 \item \textit{Unintentional breach of rules on operating reactivity margin and test-program conditions.}
 \item \textit{Insufficient technical protections and operator information; absence of warnings about these dangers.}
 \end{enumerate}
@@ -1248,7 +1249,7 @@ This was the only commission that explicitly noted the reactor's non-compliance 
 
 \section{The Volkov Commission}
 
-An employee of the Kurchatov Institute of Atomic Energy, V.~P.~Volkov, long before the accident had drawn attention to the unsatisfactory characteristics of the RBMK reactor core and of its control and protection system. He, singly and in collaboration with others, put forth definite proposals for modernization. In particular, he suggested a variant of a fast-acting Emergency Protection. I do not know the precise content of these proposals and therefore cannot pass judgment upon them; but the phenomena at which they were directed ought to have been eliminated -- whether by adopting Volkov's suggestions or in some other way -- for it was precisely owing to those phenomena that the accident occurred. For a number of years his immediate superiors, V.~I.~Osipuk and V.~V.~Kichko, took no steps to put the proposals into practice. Volkov then addressed a memorandum to the director of the Institute, the scientific head of the RBMK programme, Scientist A.~P.~Aleksandrov. No ordinary person. His resolution upon the memorandum was: ``Comrade Kichko, convene a meeting in my office at once.''
+An employee of the Kurchatov Institute of Atomic Energy, V.~P.~Volkov, long before the accident had drawn attention to the unsatisfactory characteristics of the RBMK reactor core and of its control and protection system. He, singly and in collaboration with others, put forth definite proposals for modernization. In particular, he suggested a variant of a fast-acting Emergency Protection. I do not know the precise content of these proposals and therefore cannot pass judgment upon them; but the phenomena at which they were directed ought to have been eliminated -- whether by adopting Volkov's suggestions or in some other way -- for it was precisely owing to those phenomena that the accident occurred. For a number of years his immediate superiors, A.~Ya.~Kramerov and A.~K.~Kalugin, took no steps to put the proposals into practice. Volkov then addressed a memorandum to the director of the Institute, the scientific head of the RBMK programme, Scientist A.~P.~Aleksandrov. No ordinary person. His resolution upon the memorandum was: ``Comrade Kalugin, convene a meeting in my office at once.''
 
 But either some flourish in the signature hinted, ``pay no attention,'' or for some other reason the meeting never took place before the accident. Volkov had nowhere higher to appeal: Aleksandrov was at the same time President of the Academy of Sciences.
 
@@ -1264,7 +1265,7 @@ But Volkov -- stubborn man that he was -- wrote to M.~S.~Gorbachev himself. On t
 
 And this is a \textit{supervisory} body! The very body which should ensure that reactors are built in conformity with the safety standards. Yet there is no cause for surprise. It was V.~A.~Sidorenko who bore responsibility in Gosatomenergonadzor for the nuclear safety of reactors. The same story over again.
 
-After I had been convicted, I sent a complaint to the Central Committee; there were people there sufficiently competent to understand my arguments concerning the groundlessness of the conviction. For example, V.~I.~Grechny had once served as Deputy Chief Engineer of the plant for scientific work, dealing specifically with nuclear-safety questions. And what befell? My letter in the Central Committee was passed to the Deputy Procurator-General, O.~V.~Soroka, the man who had approved my indictment. You can guess the answer. Precisely so it was.
+After I had been convicted, I sent a complaint to the Central Committee; there were people there sufficiently competent to understand my arguments concerning the groundlessness of the conviction. For example, G.~A.~Kopchinsky had once served as Deputy Chief Engineer of the plant for scientific work, dealing specifically with nuclear-safety questions. And what befell? My letter in the Central Committee was passed to the Deputy Procurator-General, O.~V.~Soroka, the man who had approved my indictment. You can guess the answer. Precisely so it was.
 
 Here is how Volkov speaks of the causes of the catastrophe in one of his reports:
 
@@ -1313,7 +1314,7 @@ It is much simpler to blame the staff -- a mere handful of obscure men.
 
 Thus the Conclusion of the Government Commission, and the subsequent Decision of the Politburo, opened the way for all who wished to accuse the staff and, conversely, closed the path to an objective investigation. From that time on, commissions, authors of articles in journals and newspapers, and writers of fictional and ``documentary'' works all knew what and how they must write about the Chernobyl accident.
 
-According to the new state policy, the USSR had embarked upon the path of \textit{glasnost} and openness. Therefore specialists headed by Scientist V.~A.~Legasov were sent to the International Atomic Energy Agency (IAEA) to inform ``the international community,'' as one of the informants, Dr.~A.~S.~Shulenkov, expressed it.
+According to the new state policy, the USSR had embarked upon the path of \textit{glasnost} and openness. Therefore specialists headed by Scientist V.~A.~Legasov were sent to the International Atomic Energy Agency (IAEA) to inform ``the international community,'' as one of the informants, Dr.~A.~A.~Abagyan, expressed it.
 
 \section{Soviet informers to the IAEA}
 
@@ -1394,7 +1395,7 @@ The Report contains a table of violations committed by the staff on 26 April 198
     \hline
     \textit{Report} & \textit{Blocking protections on water level and steam pressure in the drum-separators.} & \textit{Reactor protection on thermal parameters was completely disabled.} \\
     \hline
-    Comment & For water level, protection was active from another group of instruments. For overpressure, the protection remained in service. For low pressure, the turbine protection was in service; only the setpoint was changed, which lies within the operator's rights. There is no violation. & Reactor protection was in force both on physical and on thermal parameters, in accordance with the Regulations for that mode of operation. In the 1991 report of the commission headed by V.~O.~Brunsch (at long last! -- A.D.) it is stated on this very point: ``\ldots the statement made in the Report that `reactor protection on thermal parameters was completely disabled' does not correspond to reality.'' \\
+    Comment & For water level, protection was active from another group of instruments. For overpressure, the protection remained in service. For low pressure, the turbine protection was in service; only the setpoint was changed, which lies within the operator's rights. There is no violation. & Reactor protection was in force both on physical and on thermal parameters, in accordance with the Regulations for that mode of operation. In the 1991 report of the commission headed by N.~A.~Steinberg (at long last! -- A.D.) it is stated on this very point: ``\ldots the statement made in the Report that `reactor protection on thermal parameters was completely disabled' does not correspond to reality.'' \\
     \hline
     \textit{Report} & \textit{Disconnection of the protection system against the maximum design-basis accident (disconnection of the ECCS).} & \textit{Loss of the capability to limit the scale of the accident.} \\
     \hline
@@ -1533,13 +1534,13 @@ I should also like to hear from the International Nuclear Safety Advisory Group 
 \item Reactivity-control elements that do not prevent, but themselves create, a local critical mass.
 \end{itemize}
 
-The Group's report, issued in 1986, in effect repeats the statement of the Soviet specialists to the IAEA. It does not serve the cause of seeking the truth. The revelations of Scientist V.~Legasov and Dr.~A.~Shulenkov pleased the IAEA experts so much that they decided not to think for themselves. Of this they wrote in the report:
+The Group's report, issued in 1986, in effect repeats the statement of the Soviet specialists to the IAEA. It does not serve the cause of seeking the truth. The revelations of Scientist V.~Legasov and Dr.~A.~Abagyan pleased the IAEA experts so much that they decided not to think for themselves. Of this they wrote in the report:
 
 \begin{personal}[Quote from the INSAG-1 report:]
 \textit{``On the basis of this information we have a reliable explanation of the sequence of events at Unit 4 of the Chernobyl Nuclear Power Plant, and we did not attempt to find an alternative explanation.''}
 \end{personal}
 
-\section{The forensic technical expert commission.}
+\section{The forensic technical expert commission}
 
 A rabid crew. In some matters incompetent, in the main tendentious, and in any case devoid of objectivity. Frankly, I would rather not speak of this commission at all. I beheld it at the most critical moments of my life, which I should be better off forgetting -- yet cannot. The representative of NIKIET, O.~Shorokh, appeared particularly \textit{``engaging''}: insolent and unscrupulous. Little better than he was V.~A.~Trifonov of Gosatomenergonadzor.
 
@@ -1796,7 +1797,7 @@ One must not be surprised that the same knowledgeable specialists -- even after 
 
 % --
 
-In 1991 there appeared a report entitled \textit{``Causes and Circumstances of the Accident at Unit~4 of the Chernobyl Nuclear Power Plant. Measures to Improve the Safety of Nuclear Power Plants with RBMK Reactors,''} bearing the signatures of the director of the Kurchatov Institute, E.~P.~Velikhov; the general director of NPO ``Energia'' (VNIIAES), A.~A.~Abagyan; the director of NIKIET, E.~O.~Adamov; the director of the Institute for Problems of the Safe Development of Atomic Energy of the USSR Academy of Sciences, L.~A.~Bolshov; the chief specialist of the The State Committee for Science and Technology, E.~I.~Chukardin; and the director of the Scientific and Technical Center of Gospromatomenergonadzor, V.~A.~Petrov. The report was drawn up by staff of these organizations; and since these comprise, essentially, all the institutions concerned with RBMK reactors, this document is evidently to be regarded as the final word. Nothing further, it seems, may be expected from them.
+In 1991 there appeared a report entitled \textit{``Causes and Circumstances of the Accident at Unit~4 of the Chernobyl Nuclear Power Plant. Measures to Improve the Safety of Nuclear Power Plants with RBMK Reactors,''} bearing the signatures of the director of the Kurchatov Institute, E.~P.~Velikhov; the general director of NPO ``Energia'' (VNIIAES), A.~A.~Abagyan; the director of NIKIET, E.~O.~Adamov; the director of the Institute for Problems of the Safe Development of Atomic Energy of the USSR Academy of Sciences, L.~A.~Bolshov; the chief specialist of The State Committee for Science and Technology, E.~I.~Chukardin; and the director of the Scientific and Technical Center of Gospromatomenergonadzor, V.~A.~Petrov. The report was drawn up by staff of these organizations; and since these comprise, essentially, all the institutions concerned with RBMK reactors, this document is evidently to be regarded as the final word. Nothing further, it seems, may be expected from them.
 
 Naturally, the compilers of the report have laid no blame upon themselves. It would be in vain to seek in their pages any mention of violations, in the design, of the requirements of the regulatory documents. In their view there are none; no deviations. And the documents themselves ``do not exist''; they ``do not know'' them. In their eyes, RBMK reactor installations possess merely certain ``features'':
 
@@ -1922,9 +1923,9 @@ First. The reactor \textit{``has shortcomings.''} No: it had impermissible defec
 \textit{For in essence the RBMK-86 reactors (he has in mind the RBMK-1000 in the state they were in as of 1986 -- A.~D.) had no normal protection. They had no Emergency Protection at all! Neither from the bottom of the core, nor from the top.''}
 \end{personal}
 
-All this B.~G.~Dubovsky says after analyzing the protection system. Several years before the accident he had likewise made proposals for improving it. Their fate was the same: into the wastebasket. The Chief Designer himself, M.~A.~Dollezhal, admitted that a reactor with such a large positive reactivity effect is uncontrollable. He did not find it possible, at the end of his life, to lie. Can the creator of a reactor not know that it must meet standards? Does that accord with common sense?
+All this B.~G.~Dubovsky says after analyzing the protection system. Several years before the accident he had likewise made proposals for improving it. Their fate was the same: into the wastebasket. The Chief Designer himself, N.~A.~Dollezhal, admitted that a reactor with such a large positive reactivity effect is uncontrollable. He did not find it possible, at the end of his life, to lie. Can the creator of a reactor not know that it must meet standards? Does that accord with common sense?
 
-Second. A.~P.~Alexandrov very deftly, one might say masterfully, shifts the arrow to M.~A.~Dollezhal. Of course the Chief Designer bears responsibility; but A.~P.~Alexandrov ought not to slip away from his share. It was not Dollezhal who received the money for the invention, but Alexandrov. Twice the patent applications were rejected by the Union Bureau (see \textit{Literaturnaya gazeta}, no.~20, 1989); then they pushed them through under departmental secrecy. In my view, the Union Bureau was wrong to reject them. There were obvious signs of an \textit{``invention''} here:
+Second. A.~P.~Alexandrov very deftly, one might say masterfully, shifts the arrow to N.~A.~Dollezhal. Of course the Chief Designer bears responsibility; but A.~P.~Alexandrov ought not to slip away from his share. It was not Dollezhal who received the money for the invention, but Alexandrov. Twice the patent applications were rejected by the Union Bureau (see \textit{Literaturnaya gazeta}, no.~20, 1989); then they pushed them through under departmental secrecy. In my view, the Union Bureau was wrong to reject them. There were obvious signs of an \textit{``invention''} here:
 
 \begin{itemize}
 \item all reactors are nuclear-hazardous only at large operational reactivity margin; the RBMK is hazardous both at large margin and at small;
@@ -2054,7 +2055,7 @@ As to the protection system, we have just seen. Now as to reactor power:
 
 \begin{itemize}
 \item in the supplement to the act it is shown in detail that in no pre-accident document is there even a hint of limitations on reactor operation at any power level, \qty{200}{\mega\watt} included;
-\item to the world community they reported, succinctly and clearly, that operation at power below \qty{700}{\mega\watt}W was prohibited by the Regulations.
+\item to the world community they reported, succinctly and clearly, that operation at power below \qty{700}{\mega\watt} was prohibited by the Regulations.
 \end{itemize}
 
 A lie -- and what of it? Such \textit{``principled''} people were, and remain, engaged in the investigation. After all, a man is master of his word: he gives it, and he takes it back.
@@ -2067,7 +2068,7 @@ The fact is that, in hospital, the investigator questioned me several times -- t
 
 I was discharged from hospital on 4~November 1986, and the next day my wife and I came to Kiev. I lived a month in freedom and, with the help of twice-daily walks, began to restore my coordination of movement and, in general, to come to myself little by little. All this came with difficulty. During the illness I had \textit{``eaten away''} fifteen kilograms and have not regained them to this day. I \textit{``ate away''} muscle -- there never was any fat on me -- and such loss cannot be restored by food.
 
-Then, on 4 December, I was transferred to a cell. In a pr--trial detention centre one's ability to follow events is limited. And after the trial, shattered as I was, for a long time I could not read, not only periodicals, but even normal books. Yes, to speak frankly, even now I have no particular desire to read about the catastrophe, although I do read. By now there is no longer indiscriminate vilification of the staff, but every so often -- even well-wishers -- slip something in that makes one flinch.
+Then, on 4 December, I was transferred to a cell. In a pre-trial detention centre one's ability to follow events is limited. And after the trial, shattered as I was, for a long time I could not read, not only periodicals, but even normal books. Yes, to speak frankly, even now I have no particular desire to read about the catastrophe, although I do read. By now there is no longer indiscriminate vilification of the staff, but every so often -- even well-wishers -- slip something in that makes one flinch.
 
 For example: it is said that the staff regarded the reactor as simple and reliable as a cupboard; they were not warned, and therefore the staff violated the instructions. Gentlemen, we have no need of such \textit{``defence''} any more than we have need of such accusations. You might first have spoken with operators on RBMKs and on other reactors. No, they do not expect an explosion, such as at Chernobyl; that belongs to pathology. No, they do not expect Emergency Protection to introduce positive reactivity -- that cannot even be classified in any way. As a Ukrainian would say: \textit{bezgluzdya, nisenitnytsia} (nonsense, absurdity).
 
@@ -2103,7 +2104,7 @@ Medvedev writes:
 
 Here before me lies the program; it is included in an appendix. In the Program of Turbogenerator Run-Down there is not a single word about disabling the reactor protection. Either Medvedev never laid eyes upon the program, or he understood nothing in it.
 
-No complete blackout of the unit equipment was envisaged. On the contrary: according to the program, all mechanisms of the unit were transferred to reserve power, and only those mechanisms required for the test were powered by the running-down the Turbogenerator. This arrangement ensured the normal cool-down of the unit after the Turbogenerator frequency fell and the mechanisms were disconnected from it. In particular, four of the eight Main Circulation Pumps were supplied from the reserve. So also the remaining auxiliary mechanisms and all mechanisms of reliable power supply.
+No complete blackout of the unit equipment was envisaged. On the contrary: according to the program, all mechanisms of the unit were transferred to reserve power, and only those mechanisms required for the test were powered by the running-down of the Turbogenerator. This arrangement ensured the normal cool-down of the unit after the Turbogenerator frequency fell and the mechanisms were disconnected from it. In particular, four of the eight Main Circulation Pumps were supplied from the reserve. So also the remaining auxiliary mechanisms and all mechanisms of reliable power supply.
 
 Medvedev continues:
 
@@ -2115,12 +2116,98 @@ When the mechanisms of plant auxiliaries are de-energised (without a design basi
 
 Melting of the core is by no means equivalent to a design basis accident. If the core melts, an RBMK -- and indeed the entire unit -- may be considered lost. Contamination of the building and, likely, the station territory cannot be avoided. In a design basis accident none of this should occur, though the accident is serious.
 
+Indeed, the Turbogenerator run-down mode is used for one of the ECCS subsystems during a design basis accident. But what is meant thereby is to ensure the operation of the feedwater pumps only; the remaining mechanisms are of secondary concern. The Main Circulation Pumps are not counted upon during a design basis accident, since depending on the nature of the accident they may be torn off within the first seconds. Of the long quotation above, only the last sentence is partially correct.
+
+\begin{personal}[From G.~Medvedev's \textit{The Chernobyl Notebook}:]
+\textit{``Similar tests, but with the reactor's active protections in place, had been conducted earlier at the Chernobyl Nuclear Power Plant and at other nuclear power stations. I also had to take part in them.''} (p.~16)
+\end{personal}
+
+All Emergency Protection systems for the given mode were in place this time as well.
+
+At other stations no such tests were conducted -- something Medvedev himself writes in his tale.
+
+I took part in all these tests, and never saw Medvedev at any of them. And in what capacity would he have taken part, being occupied with equipment deliveries?
+
+\bigskip
+\textbf{A true documentalist!}
+
+The words alone are correct, but not the content they express.
+
+\begin{personal}[From G.~Medvedev's \textit{The Chernobyl Notebook}:]
+\textit{``When the reactor is loaded with fresh fuel, its reactivity margin (to put it simply, the capacity for growth of neutron power) exceeds the capacity of the absorbing rods to suppress the reaction. In such a case, part of the fuel (assemblies) is removed and in their place fixed absorbing rods are inserted (they are called supplementary absorbers -- DP), as if to assist the movable rods. As the uranium burns up, the DP are removed and nuclear fuel is installed in their place.}
+
+\textit{However, one inviolable rule remains: as fuel burns up, the number of absorbing rods loaded into the active core must not be fewer than twenty-eight to thirty (after the Chernobyl accident this number was increased to seventy-two), since at any moment a situation may arise in which the fuel's capacity for power growth proves greater than the absorbing capacity of the regulating rods. These \num{28}~to~\num{30} rods, located in the zone of highest effectiveness, \ul{constitute the operational reactivity margin} (emphasis mine -- A.\,D.). In other words, at all stages of reactor operation its capacity for a run-away must not exceed the capacity of the absorbing rods to shut the reactor down.''} (p.~17)
+\end{personal}
+
+Those who understand reactor physics, do not despair, and do not call yourselves blockheads if you understood nothing from this lengthy excerpt. There is nothing here to understand. It is a case of having heard a bell but not knowing where it hangs. Here is what the matter actually is. After the first unit of the Leningrad Nuclear Power Plant was commissioned, as fuel burned up the DP began to be extracted and replaced with fuel assemblies. It was noticed that the reactor was becoming ever more ``capricious'' -- to control it, rod movements had to be commanded up to 40~times per minute. This was a consequence of the increasing steam (void) effect of reactivity. Measurements were taken and recommendations were issued to reduce it: increase the enrichment of the fuel in Uranium-235 (at the Leningrad plant it was \qty{1.8}{\percent}) or leave some of the DP in place.
+
+It was then decided to retain no fewer than \num{30}~DP in the active core. This is, of course, insufficient at an enrichment of \num{1.8} and even \qty{2.0}{\percent}.
+
+Subsequently, fuel enrichment was raised to \qty{2}{\percent}; science blithely declared this sufficient, and from then on all DP were extracted, since they adversely affect fuel economy. Thus, at the fourth unit of the Chernobyl plant by 26~April only one DP remained in the core -- I no longer recall why it was left.
+
+The DP have no bearing on the operational reactivity margin. It is compensated (absorbed, suppressed) by Control and Protection System rods -- RR, AR, and USP -- and can be rapidly (operatively) freed by the reactor operator. To extract a single DP using the refuelling machine takes several hours -- what ``operativeness'' is there in that?
+
+Forgive me for so lengthy an excerpt from the tale, but it is necessary. Further on in the text, the author repeatedly and just as perversely misinterprets, invokes the concept of the operational reactivity margin, and purports to explain the processes under way. How can one explain to others what one does not understand oneself? Or on the principle that if you explain it to people five times, you may come to understand it yourself.
+
+\begin{personal}[From G.~Medvedev's \textit{The Chernobyl Notebook}:]
+\textit{``In January 1986, the director of the Nuclear Power Plant, V.~P.~Bryukhanov, sent the test program to the general designer `Gidroproekt' and to Gosatomenergonadzor for approval. No reply followed. Neither the directorate of the Chernobyl Nuclear Power Plant, nor the operational production association Soyuzatomenergo was troubled by this. Nor were `Gidroproekt' and Gosatomenergonadzor troubled by it.''} (p.~17)
+\end{personal}
+
+And over the following two pages Medvedev describes what irresponsible people they are and how nothing good should be expected of them.
+
+To lend verisimilitude he even states specifically ``in January 1986.'' Remember how in Saltykov-Shchedrin the next governor-general is described: found in bed, bitten to death by bedbugs, in 1856. No. The program was signed by the Chief Engineer on 24~April 1986.
+
+By this I do not in the least wish to say that Gosatomenergonadzor and ``Gidroproekt'' discharged their duties impeccably -- but neither do I wish to prove that they did not.
+
+\begin{personal}[From G.~Medvedev's \textit{The Chernobyl Notebook}:]
+\textit{``Here it is necessary to add one more detail, which was not mentioned in any of the technical reports on the incident. Here is that detail: the mode with the Turbogenerator rotor run-down with removal of AZ from service was planned in advance and was not only reflected in the test program but also prepared technically. Two weeks before the experiment, on the panel of the unit control room of the fourth unit, an MPA button was installed, whose signal activated only secondary electrical circuits, but without the monitoring and measuring instruments and the pump section. That is, the signal from this button was purely simulated.''} (p.~19)
+\end{personal}
+
+Oh, how he digs! He unearthed the button. But he is not the first. It appears in the forensic experts' records and in the Indictment. The button was installed not two weeks beforehand but on 25~April, as witness electrician Molts testified. Without the program, the operators could have established nothing.
+
+In the commission records there is no mention of this button, since for the purpose of accusing the personnel nothing can be extracted from it. Only the forensic experts and Medvedev inject living current into it. The experts say that no documentation for it existed, while Medvedev simply made the whole thing up. That is exactly what he says.
+
+\begin{personal}[From G.~Medvedev's \textit{The Chernobyl Notebook}:]
+\textit{``Let me explain once more for the general reader: when AZ is actuated, all \num{211} absorbing rods drop downward, cooling water is turned on, emergency pumps are activated and reliable-supply diesel generators are brought up to speed. Also activated are the pumps for emergency water supply from the clean-condensate tanks and the pumps delivering water from the bubbler pool into the reactor. That is, there are more than enough means of protection, provided they actuate at the right moment.}
+
+\textit{And all of these protections were supposed to have been linked to the MPA button. But they had, unfortunately, been taken out of service, since the operators feared thermal shock to the reactor, i.e.\ the admission of cold water into the reactor. This feeble notion had apparently mesmerised both the management of the Nuclear Power Plant (Bryukhanov, Fomin, Dyatlov) and the higher organisations in Moscow.''} (p.~19)
+\end{personal}
+
+Medvedev has jumbled everything together. For different signals the actuation sequences and mechanisms are different. Let us note that he speaks of AZ during a design basis accident. But during the experiment the circuit was not expected to rupture at all -- so why, then, connect the ECCS cylinders and the pumps delivering water from the bubbler pools? There is simply nowhere to pump the water -- the drum separators are full.
+
+The Emergency Core Cooling System is designed for use during a design basis accident. On 26~April 1986, it was not a design basis accident but something else. How to classify it I do not know; it is called a maximum hypothetical accident. So be it!
+
+I shall not adduce any further considerations. I believe that people with feeble ideas should listen to the wise counsel of an experienced nuclear-plant operator. And if this really could have prevented the accident -- well, as the saying goes, trust but verify. They accepted Medvedev's idea about activating the ECCS upon the start of the Turbogenerator run-down. How could this have influenced what was happening in the reactor? Coolant flow was already high enough, so merely adding cold water to the reactor -- specifically, to its active core -- would have reduced steam formation and, consequently, reactivity. Only the ``instantaneous'' part of the ECCS need be considered; all the rest is irrelevant. Let us agree that the button would send both the MPA signal and the AZ signal.
+
+The time should be taken from the registration system of the centralised monitoring system ``Skala,'' and not from what is given in the tale, taken from who knows where:
+
+\begin{quote}
+01~h 23~min 40~s -- AZ-5 button pressed,\\
+01~h 23~min 46\ldots47~s -- explosion of the reactor.
+\end{quote}
+
+This means we had \num{6}~seconds at our disposal, since by then pressure in the circuit had already risen, and the supply of water even by the feedwater pump would have ceased, to say nothing of the cylinders.
+
+The problem before us is straightforward. Will the cold water reach the active core in \num{6}~seconds? If so, it might have some effect. A calculation, which I do not reproduce here, shows that even with incomplete opening of the valves from the header at the \qty{+30}{\metre} elevation, the water reaches the core in more than \qty{10}{\second}.
+
+And \num{10}~seconds later this water would have had nothing left to act upon. The active core no longer existed.
+
+The other variant, when the ECCS is activated upon closure of steam to the turbine and the AZ button is pressed \num{36}~seconds later -- as actually occurred at the unit -- yields nothing either. In \num{36}~seconds the cold water will have passed through the entire core, and the negative reactivity it introduces will have been compensated by the automatic power regulator.
+
+Such is the state of affairs with Medvedev's advice to activate the ECCS.
+
+\textit{Know thy subject, if thou wouldst speak of it.}
+
+I have dwelt on this matter at such length for the following reason: while I was still in detention, awaiting conclusion of the proceedings, a charming French television correspondent kept pressing me about why the water had not been supplied. I simply could not fathom what water she was talking about. Only when the filming was over and she mentioned that she had read Medvedev's book did I understand what water was in question. And the tale continues to travel the world, sowing its lies.
+
+Even the tendentious commission of forensic experts was compelled to acknowledge that disconnection of the ECCS had influenced neither the initiation nor the development of the accident.
+
 And all the subsequent arguments in the tale on this subject are equally groundless -- purely speculative constructions which unfailingly excite the imagination of readers unfamiliar with the unit and the reactor. Such readers constitute the overwhelming majority, even among specialists. General nuclear knowledge is of no use here; what is needed is specific, concrete knowledge of the RBMK and its systems.
 
 Here is one sentence from that realm, simultaneously revealing the author's grasp of physics -- very revealing indeed:
 
 \begin{personal}[From G.~Medvedev's \textit{The Chernobyl Notebook}:]
-\textit{``Yet these \qty{350}{\metre\cubed} of emergency water from the ECCS tanks, \underline{when the run-up on prompt neutrons began} (emphasis mine -- A.\,D.), when the Main Circulation Pumps were torn off and the reactor was left without cooling, could perhaps have saved the situation and quenched the steam effect of reactivity, the most significant of all\ldots''} (p.~22).
+\textit{``Yet these \qty{350}{\metre\cubed} of emergency water from the ECCS tanks, \ul{when the run-up on prompt neutrons began} (emphasis mine -- A.\,D.), when the Main Circulation Pumps were torn off and the reactor was left without cooling, could perhaps have saved the situation and quenched the steam effect of reactivity, the most significant of all\ldots''} (p.~22).
 \end{personal}
 
 No -- if a power excursion on prompt neutrons has begun, then there is no salvation. Only the destruction of the reactor itself will stop it; in nuclear power reactors there exist no other means. On page~10 of the tale Medvedev lists Soviet reactor accidents: 
@@ -2194,7 +2281,7 @@ Is he lying? Only a little; others lie more. Medvedev adds but a brushstroke. Ye
 Thus, dear Reader, are we surrounded on all sides -- and still are -- with the help of Medvedevs. His narration of the pre-accident events is incorrect, and cannot be correct, given his knowledge. One may write truthfully even without prior knowledge -- by listening to competent people. But Medvedev's swagger, his self-advertising as an \textit{``experienced operator,''} prevents him from consulting anyone. Let us pause at several further points.
 
 \begin{personal}[From G.~Medvedev's \textit{The Chernobyl Notebook}:]
-\textit{``At 01:07 a.m., to the six operating Main Circulation Pumps, one more was additionally switched on, with the calculation that after the experiment ended four Main Circulation Pumps would remain in the circulation loop for reliable cooling of the core''} (p.~30).
+\textit{``At 01:07 a.m., to the six operating Main Circulation Pumps, one more each was additionally switched on, with the calculation that after the experiment ended four Main Circulation Pumps would remain in the circulation loop for reliable cooling of the core''} (p.~30).
 \end{personal}
 
 Correct. But on p.~34: \textit{``The total flow through the reactor began to fall because all eight Main Circulation Pumps were operating from the rundown turbine generator.''}
@@ -2265,7 +2352,7 @@ I should have gone on working in Komsomolsk, had the path not turned otherwise. 
 
 While on leave, I stopped in Pripyat and agreed with Director V.~P.~Bryukhanov about the post of deputy head of the Reactor Department. We did not speak of the shop head's post; that post was already filled. When I spoke with Bryukhanov no one else was present, and Medvedev has nothing to do with it. In general, he clearly exaggerates his role in staffing the station; he left in 1974, when no money whatsoever had yet been allocated for recruiting personnel. Incidentally, this is the surest indicator of whether the Ministry believes in a scheduled start-up date: if no money is allotted for recruiting, there will be no start-up. It is possible that Medvedev did speak with Bryukhanov about people in general, but only in principle; concrete individuals could not yet have been under discussion.
 
-I arrived at the station after receiving a summons in September 1973, after fourteen years at the plant. Submarine reactors are, of course, different in design and much smaller in size. But they are no toys -- real power reactors. At Chernobyl I served as deputy, then as head of the Reactor Department. And since February 1983 I had experience working with reactors.
+I arrived at the station after receiving a summons in September 1973, after fourteen years at the plant. Submarine reactors are, of course, different in design and much smaller in size. But they are no toys -- real power reactors. At Chernobyl I served as deputy, then as head of the Reactor Department, and from February 1983 as Deputy Chief Engineer for Phase~II.
 
 The accusations levelled at Dyatlov by Medvedev have no foundation.
 
@@ -2285,13 +2372,13 @@ In all my time at the power plant I did not remove a single operator from duty i
 
 Medvedev alleges that Dyatlov ran about the premises, wasting precious minutes. Dyatlov ran -- in the forest -- but that is another matter. No one ever saw me running about the control room. Why, then, should I suddenly begin running on 26~April? Such idiotic behaviour by the senior technical person in the control room as Medvedev describes could by itself bring about an accident. But nothing of the sort took place, nor anything remotely resembling it. On 26~April I raised my voice loudly only twice: once with the command, \textit{``Everyone to the standby control panel,''} and once when Kabanov began telling me that the vibration laboratory would remain in the turbine hall; I ordered him to leave the unit immediately. Both incidents were after the accident.
 
-In his tale Medvedev speaks of two operators from the previous shift who remained to observe, Yu.~Tregub and S.~Razin. Here is what they wrote in response to my questions.
+In his tale Medvedev speaks of two operators from the previous shift who remained to observe, Yu.~Tregub and S.~Gazin. Here is what they wrote in response to my questions.
 
 \begin{personal}[Letter of Yu.~Tregub to Dyatlov (07 June 1990):]
 \textit{``Before the accident there were no conversations in raised tones with members of the operating personnel, nor was any dissatisfaction expressed about the power drop. There were also no attempts to remove L.~Toptunov from control; he performed his duties throughout the shift. After the power drop, ARM was switched on, and, on the order of the unit shift supervisor, A.~Akimov, which I suppose was coordinated with you and the plant shift supervisor, power was raised to \qty{200}{\mega\watt}. I did not notice anything resembling disagreement about raising power''}
 \end{personal}
 
-\begin{personal}[Letter of S.~Razin to Dyatlov (07 June 1990):]
+\begin{personal}[Letter of S.~Gazin to Dyatlov (07 June 1990):]
 \textit{``Before the accident I did not hear any words in raised tones, only orders relating to execution of the experiment according to the programme. During the power drop I went over to the SIUR panel; I saw that, so far as I could understand, tense work was in progress to raise and stabilize reactor power, carried out by Toptunov. I did not see anything that could be regarded as attempts to remove or replace him, nor any pressure on him from your side or from Akimov, allegedly refusing to raise power after the drop, nor any dissatisfaction caused by the drop. I consider that such a conflict situation in the control room could not have gone unnoticed.''}
 \end{personal}
 
@@ -2299,7 +2386,7 @@ There \textit{were} some conversations about removing Toptunov -- but they arose
 
 How it really was I have already described. Bryukhanov asked me nothing, neither by telephone nor in the bunker when I came there. I did not speak with Fomin at all on 26~April. Had I believed the reactor intact, I should certainly have attempted to organize water injection. I knew the unit well, and no one at the station knew the Reactor Department better than I. In case of a shortage of people I would have appealed to Bryukhanov. Yet we made no effort in that direction -- plain testimony to what I thought of the reactor's condition.
 
-Medvedev's remark that Toptunov and Akimov behaved bravely, but to no purpose, is immoral. Leonid, by virtue of his post, indeed could no longer influence events. But by his conduct -- returning of his own accord to the unit -- he set an example of devotion to duty. And all the work of de-energizing mechanisms, removing turbine load, draining turbine oil, displacing hydrogen from the generators -- in short, preventing new fires -- was carried out under Aleksandr Akimov's direct leadership. Nothing more useful could have been done in that situation. What \textit{was} done is much, and it was necessary. Aleksandr Akimov was a good, exceptionally conscientious worker. And he died with the dignity of a Human Being.
+Medvedev's remark that Toptunov and Akimov behaved bravely, but to no purpose, is immoral. Leonid, by virtue of his post, indeed could no longer influence events. But by his conduct -- returning of his own accord to the unit -- he set an example of devotion to duty. And all the work of switching off loads, de-energizing, draining turbine oil, purging hydrogen from the generators -- in short, preventing new fires -- was carried out under Aleksandr Akimov's direct leadership. Nothing more useful could have been done in that situation. What \textit{was} done is much, and it was necessary. Aleksandr Akimov was a good, exceptionally conscientious worker. And he died with the dignity of a Human Being.
 
 We have examined the technical part of Medvedev's tale. Note the first quotations I cited and their page numbers. You will see that practically everything is incorrect. The remaining words between them serve only as ligatures. I did not continue to take the text further; but believe me -- or verify it yourself -- beyond that everything is equally wrong. One falsehood after another, sequentially.
 
@@ -2433,7 +2520,7 @@ Three days later Akinfiev entered and asked:
 
 \begin{quote}
 --- ``Have they made them yet?''\\
---- ``No.'', I said.\\
+--- ``No,'' I said.\\
 --- ``Then why were you babbling that they would do it quickly?''\\
 --- ``Have you gone daft, chief? It is impossible to do that in such time. Even if the documentation is simple, it still must pass through design, technological, and production departments.''
 \end{quote}
@@ -2637,7 +2724,7 @@ On Monday I went, as usual, to the post office in the settlement for the newspap
 
 I changed my clothes and took with me as a memento a shirt with its tag and the headgear with the romantic name ``piderka.'' Three years and ten months out of my life --- down the drain. They took my health; that seemed too little for them.
 
-\chapter{The Investigation}
+\chapter{The Investigation Has Begun}
 
 Commissions and collectives of authors who have written on the accident in technical journals, however much they may diverge on secondary particulars, have in essence two common features:
 
@@ -2790,7 +2877,7 @@ However accurate, forceful, and resolute the reports of A.~A.~Yadrikhinsky and B
 
 Be assured: had the reactor complied with design norms, the Kurchatov Institute and NIKIET would have produced within a week an exhaustive report demonstrating this in the minutest detail. Neither the Ministry of Energy nor its successor, the Ministry of Atomic Energy, needs such a demonstration.
 
-The right and obligation to establish the reactor' compliance with the norms belongs directly to the supervisory body -- Gosatomenergonadzor. Yet having failed to perform its supervisory duties before the accident, this body -- or, more precisely, the persons staffing it -- opposed such an examination for several years after the accident as well. Though styled ``State'', it was not state in essence. Before 1984 it was, indeed, merely a subdivision of the Ministry of Medium Machine Building -- a pocket supervisory authority. Although formally invested with broad powers, in practice it did not dare to exercise them. Not even after the accident. Repeated requests by the supervisory body that the Scientific Leader and Chief Designer furnish a safety justification for the RBMK reactor were simply ignored.
+The right and obligation to establish the reactor's compliance with the norms belongs directly to the supervisory body -- Gosatomenergonadzor. Yet having failed to perform its supervisory duties before the accident, this body -- or, more precisely, the persons staffing it -- opposed such an examination for several years after the accident as well. Though styled ``State'', it was not state in essence. Before 1984 it was, indeed, merely a subdivision of the Ministry of Medium Machine Building -- a pocket supervisory authority. Although formally invested with broad powers, in practice it did not dare to exercise them. Not even after the accident. Repeated requests by the supervisory body that the Scientific Leader and Chief Designer furnish a safety justification for the RBMK reactor were simply ignored.
 
 In 1986, when the question arose of restarting Unit~1 of the Chernobyl NPP, which had been shut down after the accident, the matter of providing safety-justification materials arose anew. To this the Scientific Leader, A.~P.~Alexandrov, who was present, replied:
 
@@ -2798,7 +2885,7 @@ In 1986, when the question arose of restarting Unit~1 of the Chernobyl NPP, whic
 ``What further justifications do you need, if here I -- I myself -- say: the reactor is safe, start it up.''
 \end{personal}
 
-And by decision of the Government Commission they did start it up. The self-assurance and habit of command on the part of A.~P.~Alexandrov are understandable. Less understandable are the actions of the supervisory body and of the entire commission: A.~P.~Alexandrov had made no shortage of declarations concerning the reactor's ``reliability'' even before the accident, and yet, behold, they worked -- and yet again.
+And by decision of the Government Commission they did start it up. The resulting safety-justification document is reproduced in Appendix~G. The self-assurance and habit of command on the part of A.~P.~Alexandrov are understandable. Less understandable are the actions of the supervisory body and of the entire commission: A.~P.~Alexandrov had made no shortage of declarations concerning the reactor's ``reliability'' even before the accident, and yet, behold, they worked -- and yet again.
 
 Only after a change of leadership did the supervisory body at last venture to examine the reactor's conformity to the legal norms of design.
 
@@ -2817,9 +2904,9 @@ My own view -- the view of a witness to the events -- coincides with the report'
 \begin{personal}[Quote from the report of the commission under N.~A.~Shteinberg]
 ``Thus, before the start of the tests, the parameters of the core had determined an increased susceptibility of the reactor to a self-runaway process in the lower part of the core. The commission considers that such a state arose not only because there was an increased, compared to usual, coolant flow through the reactor (under the influence of the operation of eight, instead of the usual six, MCPs, the increased flow impedes steam formation), but primarily because of the low value of the reactor power.
 
-\underline{Similar thermohydraulic parameters can arise during any reactor shutdown for refuelling (underlined - A.D.).}
+\ul{Similar thermohydraulic parameters can arise during any reactor shutdown for refuelling (underlined - A.D.).}
 
-The initial state of the unit immediately before the tests at 01:23 a.m. was characterized by the following: power -- \qty{220}{\mega\watt}; reactivity margin (value obtained after the accident using the PRIZMA-ANALOG code for the state at 00:22:30 a.m.) -- 8~(RR) rods; the axial power profile was double-humped with a maximum at the top; coolant flow -- \qty{56}{\meter\cubed\per\hour}; feedwater flow -- \qty{200}{\tonne\per\hour}; thermophysical parameters close to stable. The management of the unit shift judged the preparations for the tests to be complete, and after the oscillograph had been switched on, an order followed to close the stop-control valves, which were closed at 01:23:04 a.m.
+The initial state of the unit immediately before the tests at 01:23 a.m. was characterized by the following: power -- \qty{200}{\mega\watt}; reactivity margin (value obtained after the accident using the PRIZMA-ANALOG code for the state at 01:22:30 a.m.) -- 8~(RR) rods; the axial power profile was double-humped with a maximum at the top; coolant flow -- \qty{56000}{\meter\cubed\per\hour}; feedwater flow -- \qty{200}{\tonne\per\hour}; thermophysical parameters close to stable. The management of the unit shift judged the preparations for the tests to be complete, and after the oscillograph had been switched on, an order followed to close the stop-control valves, which were closed at 01:23:04 a.m.
 
 Both in this period and during the approximately \qty{30}{\second} of rundown of the four Main Circulation Pumps, the unit parameters were confidently controlled, lay within the expected limits for this regime, and did not require any action by the personnel.
 
@@ -2919,7 +3006,7 @@ The earliest written judgment on the causes of the Chernobyl catastrophe known t
 
 The immediate causes he identified were: the introduction of positive reactivity upon actuation of AZ owing to a design defect of the control rods, and the large positive steam-void coefficient of reactivity. This was the first, and entirely correct, diagnosis -- a diagnosis that received open, official recognition only five years later. It was not the product of intuition, but of concrete knowledge of the RBMK's properties -- knowledge of whose unsatisfactory character he had long, and unsuccessfully, attempted to bring to the attention of the leadership, including A.~P.~Aleksandrov. From the Central Committee Volkov's letter was transmitted to the State Atomic Energy Supervision Authority, where a commission under the chairmanship of V.~A.~Sidorenko in effect acknowledged the correctness of the causes he named.
 
-Such a version could not, at that time, be permitted recognition. It was altogether too inconvenient for too many. Soon there appeared the report of the interdepartmental commission headed by the Deputy Minister of Medium Machine Building, A.~G.~Meshkov. Strictly speaking, the commission was ``interdepartmental'' only at the moment of its appointment; thereafter it in effect became a commission of Ministry of Medium Machine Building -- that is, of the reactor's creators -- for the report was refused a signature, owing to its manifest bias, by the Deputy Minister of Energy G.~A.~Shasharin, the Director of VNIIAES S, A.~A.~Abagyan, and the Chief Engineer of Chief Administration of Nuclear Power Units, B.~Ya.~Prushinskiy.
+Such a version could not, at that time, be permitted recognition. It was altogether too inconvenient for too many. Soon there appeared the report of the interdepartmental commission headed by the Deputy Minister of Medium Machine Building, A.~G.~Meshkov. Strictly speaking, the commission was ``interdepartmental'' only at the moment of its appointment; thereafter it in effect became a commission of Ministry of Medium Machine Building -- that is, of the reactor's creators -- for the report was refused a signature, owing to its manifest bias, by the Deputy Minister of Energy G.~A.~Shasharin, the Director of VNIIAES, A.~A.~Abagyan, and the Chief Engineer of Chief Administration of Nuclear Power Units, B.~Ya.~Prushinskiy.
 
 According to the act of that commission, the reactor explosion occurred as a consequence of steam blanketing of the core caused by the rundown of the Main Circulation Pumps. This ``rundown'' -- that is, a supposed cessation of coolant supply to the core -- was said to have arisen from a mismatch between the feedwater flow rate and the coolant flow delivered by each pump.
 
@@ -3057,7 +3144,7 @@ Under no circumstances should one conceal from the population the existence of p
 Here is how G.~Medvedev writes:
 
 \begin{personal}[From G.~Medvedev's \textit{The Chernobyl Notebook}]
-\textit{``The officer and soldiers are not wearing respirators; they hang on their necks. Illiteracy from poorly organized training\ldots~After all, future generations will come from these young men. Even \qty{1}{\roentgen\per\hour} gives a \qty{50}{\percent} probability of mutation\ldots''}
+\textit{``The officer and soldiers are not wearing respirators; they hang on their necks. Illiteracy from poorly organized training\ldots~After all, future generations will come from these young men. Even \qty{1}{\roentgen\per\year} gives a \qty{50}{\percent} probability of mutation\ldots''}
 \end{personal}
 
 This would indeed be terrible -- if it were true. The entire world proceeds on the assumption of five rem per year for professionals. But the number of such professionals is large. Not all receive the full permissible dose. Yet, for example, the repair personnel of reactor departments practically all receive that dose each year. If at five rem per year the mutation probability were what Medvedev asserts for one roentgen, then where are the anomalies? Why does neither the population nor the medical profession observe them? As with so much else, Medvedev's claim is conjured out of thin air.
@@ -3170,7 +3257,7 @@ In the Kurchatov Institute (IAE) report mentioned above, under the heading ``Mos
 \item[3.10] Cavitation on the throttle-regulating valves.
 \item[3.11] Carryover of steam from the drum-separator into the downcomer lines.
 \item[3.12] Steam-zirconium reaction and hydrogen explosion in the core.
-\item[3.13] Ingress of compressed gas from the Emergency Core Cooling System, cylinders.
+\item[3.13] Ingress of compressed gas from ECCS cylinders.
 \end{enumerate}
 
 These are not all possible causes that could lead to the explosion of this apparatus, but they suffice for substantive discussion. Version~3.6 has been accepted as the only non-contradictory explanation. Version~3.10 is essentially impossible.
@@ -3265,7 +3352,7 @@ It is long past time to say: \textit{the properties of the reactor were not the 
 
 \varthreestars
 
-A group of IAEA experts issued in 1986 the report INSAG-1 on the causes of the Chernobyl catastrophe, and seven years later released their corrected report, INSAG-7. Seven years is ample time for studying many investigations and forming one's own judgment. Upon the publication of INSAG-7, the journal ``Nuclear Engineering'' printed an article by Mr.~D.~Valley, ``Who Is to Blame for the Chernobyl Accident -- Mature Reflections of the International Nuclear Safety Advisory Group.'' Let us try to assess the maturity of the experts' reflections.
+A group of IAEA experts issued in 1986 the report INSAG-1 on the causes of the Chernobyl catastrophe, and seven years later released their corrected report, INSAG-7. Seven years is ample time for studying many investigations and forming one's own judgment. Upon the publication of INSAG-7, the journal ``Nuclear Engineering'' printed an article by Mr.~J.~Varley, ``Who Is to Blame for the Chernobyl Accident -- Mature Reflections of the International Nuclear Safety Advisory Group.'' Let us try to assess the maturity of the experts' reflections.
 
 \paragraph{1.\ On the subcooling of the coolant}
 For eight years an erroneous assertion has persisted: that owing to the high coolant flow rate, its subcooling at the inlet to the core decreased, boiling began at the very bottom of the core, and, as a consequence, thermohydraulic instability arose. The author pointed out this error as early as 1986, and later in a letter addressed to the Director of the IAEA.
@@ -3374,7 +3461,7 @@ On p.~45 of Appendix~I to INSAG-7 we read:
 \textit{``The second-generation RBMK units were initially loaded with \qty{2}{\percent} enriched fuel, but even with this enrichment, as burnup increased to \qtyrange[range-phrase=\text{--}]{1100}{1200}{\mega\Wd\per\tonne} and with the regulatory operational margin of \numrange[range-phrase=\text{--}]{26}{30} rods, the steam-void coefficient approached \qty{+5}{\betaeff}. Similar burnup existed at Unit~4 before the accident.''}
 \end{personal}
 
-At such a steam-void coefficient the power coefficient reaches \qty{+0.6}{\betaeff\per\mega\watt} above \qty{50}{\percent} power. At lower power it is even more positive.
+At such a steam-void coefficient the power coefficient reaches \qty{+0.6e-4}{\betaeff\per\mega\watt} above \qty{50}{\percent} power. At lower power it is even more positive.
 
 \subparagraph{4.2.\ As N.~Laletin noted}
 For a uniformly burnt-out core the steam-void effect is roughly twice as large as for a core with the same \textit{average} burnup but heterogeneous distribution. Thus the end of the transition period (with virtually all Additional Absorbers removed) is more dangerous than steady-state refuelling. Exactly such a state existed at Unit~4: 1~additional absorber, \num{1}~empty channel, and \num{1659} assemblies with average burnup \qty{1180}{\mega\Wd\per\tonne}; \qty{75}{\percent} of them first-load assemblies burnt to \qtyrange{1150}{1700}{\mega\Wd\per\tonne}.
@@ -3445,7 +3532,7 @@ After measures reducing the steam-void coefficient to \qty{0.8}{\betaeff}, the p
 
 Before discussing the personnel's ``guilt,'' consider the primary fact: the reactor was destroyed by the \textit{emergency protection system}.
 
-If Mr.~Valley concluded -- using the factual material of the appendices -- that the accusations are unjust, then he is correct. But such a conclusion is impossible from the INSAG report alone; indeed, it points in the opposite direction.
+If Mr.~Varley concluded -- using the factual material of the appendices -- that the accusations are unjust, then he is correct. But such a conclusion is impossible from the INSAG report alone; indeed, it points in the opposite direction.
 
 In 1986 V.~Legasov and A.~Abagyan suppressed the fact that the scram inserted positive reactivity -- so odious a fact that it could not be admitted. The experts now write that had they known, their opinion would have differed. They learned -- and still concluded by \textit{implicitly blaming} the operators (see §5.1 above). Even during the height of the anti-operator campaign, such equivocation had not been attempted.
 
@@ -3453,9 +3540,9 @@ In 1986 V.~Legasov and A.~Abagyan suppressed the fact that the scram inserted po
 
 Imagine a reactor conforming to the design norms. Which actions of the operators would then be ``erroneous'' or ``critical''? Why should the operators have compensated for design errors unknown to them?
 
-Only the lack of legal grounds for prosecuting the staff forced Legasov and Abagyan, in 1986, to resort to outright falsehood. Their motives are intelligible. What is astonishing is how readily the experts adopted this line, assuming the rôle of accusers -- condemning people before the world for violating documents the experts themselves had never seen. Bound by their first report, they were compelled to maintain the same direction in the second.
+Only the lack of legal grounds for prosecuting the staff forced Legasov and Abagyan, in 1986, to resort to outright falsehood. Their motives are intelligible. What is astonishing is how readily the experts adopted this line, assuming the role of accusers -- condemning people before the world for violating documents the experts themselves had never seen. Bound by their first report, they were compelled to maintain the same direction in the second.
 
-INSAG-7, like its predecessor, misinterprets processes; and even where its general statements are accurate, its tendentious framing renders them false. It cannot play a constructive rôle.
+INSAG-7, like its predecessor, misinterprets processes; and even where its general statements are accurate, its tendentious framing renders them false. It cannot play a constructive role.
 
 For the publication of Appendices~I and II the experts deserve thanks: the factual material is scrupulously correct and valuable. But the conclusions and evaluative judgements must be approached with utmost caution. Thus Appendix~II declares: \textit{``These characteristics of the reactor installation ensured reliable and effective RBMK operation in all regulated modes, and safety for all listed design-basis accidents in accordance with the approved design documentation.''}
 
@@ -4401,9 +4488,9 @@ The initiating event includes all dependent failures resulting from it.
 \paragraph{5.41.}
 \textbf{Technical Safety of an NPP}\footnote{Requirements for equipment, pipelines, and systems covered by this definition are established by rules and standards approved by the USSR State Mining and Technical Supervision Authority (Gosgortekhnadzor).} -- a property of the NPP, achieved through technical means and organizational measures, characterized by the strength of equipment and pipelines whose damage could impair heat removal from the reactor core, and by the ability to retain radioactive substances released under such damage within the sealed area of the NPP.
 
-\chapter*{Appendix F: Rules for Nuclear Safety of Atomic Power Plants (NSR-07-74)}
-\addcontentsline{toc}{chapter}{Appendix F: Rules for Nuclear Safety of Atomic Power Plants (NSR-07-74)}
-\markboth{Appendix F: Rules for Nuclear Safety of Atomic Power Plants (NSR-07-74)}{}
+\chapter*{Appendix F: Rules for Nuclear Safety of Atomic Power Plants (NSR-04-74)}
+\addcontentsline{toc}{chapter}{Appendix F: Rules for Nuclear Safety of Atomic Power Plants (NSR-04-74)}
+\markboth{Appendix F: Rules for Nuclear Safety of Atomic Power Plants (NSR-04-74)}{}
 
 \begin{center}
 \textbf{Rules for Nuclear Safety of Atomic Power Plants}\\
@@ -4875,12 +4962,112 @@ If necessary, Gosatomnadzor of the USSR dispatches a commission to verify NPP re
 
 \paragraph{10.4.} The act of the Gosatomnadzor commission is approved by the Chief State Inspector for Nuclear Safety of the USSR. Deficiencies noted in the act shall be eliminated within deadlines agreed with Gosatomnadzor. An act on elimination of deficiencies, approved by NPP management, is sent to Gosatomnadzor of the USSR.
 
+\chapter*{Appendix G: Safety Justification of the First-Generation RBMK Reactor upon Completion of ``Measures\ldots'' of 27.06.86 at Unit~1 of the Chernobyl NPP}
+\addcontentsline{toc}{chapter}{Appendix G: Safety Justification of the First-Generation RBMK Reactor}
+\markboth{Appendix G: Safety Justification of the First-Generation RBMK Reactor}{}
+
+\textit{Translator's note:} This document, reproduced in the original Russian edition within the body of Chapter~12, is the safety-justification report prepared for the restart of Unit~1 of the Chernobyl Nuclear Power Plant following the accident. It was signed in September~1986 by officials of the principal design and scientific organizations. The document is presented here in translation as a separate appendix for clarity.
+
+\varthreestars
+
+\begin{flushright}\small{
+\textbf{Approved by:}\\
+Chief Engineer of Enterprise P.O.~Box A-7631\\
+V.~A.~Kurunosov \hfill 28.09.86\\[0.5\baselineskip]
+\textbf{Approved by:}\\
+Deputy Director of Enterprise P.O.~Box A-7291\\
+M.~Cherkashov \hfill 27.09.86\\[0.5\baselineskip]
+\textbf{Approved by:}\\
+Head of Department of Enterprise P.O.~Box A-1758\\
+A.~K.~Kalugin \hfill 27.09.86\\[0.5\baselineskip]
+\textbf{Approved by:}\\
+Deputy Chief Engineer of the ``Hydroproject'' Institute\\
+V.~A.~Zakharov \hfill 28.09.86
+}\end{flushright}
+
+\begin{center}
+\textbf{SAFETY JUSTIFICATION OF THE FIRST-GENERATION RBMK REACTOR\\
+UPON COMPLETION OF ``MEASURES\ldots'' OF 27.06.86\\
+AT UNIT~1 OF THE CHERNOBYL NPP}\\[0.5\baselineskip]
+Chernobyl, September 1986
+\end{center}
+
+\medskip
+
+At Unit~1 of the Chernobyl Nuclear Power Plant, prior to the power startup, Stage~I of the ``Measures'' for improving the safety of RBMK reactors -- approved on 27.06.86 by the Ministry of Medium Machine Building, the Ministry of Energy, and agreed upon by Gosatomenergonadzor -- was carried out.
+
+\begin{enumerate}
+\item Thirty additional absorbers (DP) were loaded into the reactor; 124 fuel assemblies were replaced with fresh ones in order to increase the reactivity margin.
+
+\item The upper limit switches of 78 rods were repositioned, ensuring immersion of the rods to a depth of \qty{1.2}{\metre} into the active zone.
+
+\item An additional 11 manual-control (RR) rods were replaced with shortened absorber rods (USP). The travel of the USP rods was restricted to the interval $+1.2$ to $+\qty{3.5}{\metre}$.
+
+\item Introduction of the USP rods into the active zone upon AZ-5 signals was implemented.
+
+\item A cyclic calculation of the reactivity margin was set up on the station computer, with output to an indicating instrument and a chart recorder.
+
+\item A panel for the automatic logging of emergency-protection trips was assembled and placed in service.
+
+\item A ``self-latch'' of the AZ-5 button was implemented.
+
+\item The operating procedure (technological regulation) was revised and re-approved. The regulation now includes a complete list of emergency protections and the procedures for their engagement and disengagement during unit operation at various power levels and during shutdown. The reactivity margin under steady-state and transient operating regimes of the NPP is now strictly regulated.
+\end{enumerate}
+
+The effectiveness of the first two measures, which directly affect the nuclear safety of the reactor under accident conditions, was evaluated during the physical experiments preceding the power startup of Unit~1.
+
+In the course of these experiments, the voiding effect of an RBMK-type reactor with a depleted core was measured for the first time; this became feasible after a four-month standstill of the unit. Measurements were conducted both before and after the fuel reloading of the active zone.
+
+During the physical experiments, in order to obtain quantitative values of reactivity effects, 12 reactor startups to a power of \qty{30}{\kilo\watt} were performed under various conditions of the active zone, the main circulation loop, and the Control and Protection System loop. Reactor subcriticality monitoring and control were carried out using a specially developed CPS system employing in-core chambers KNK-56 and fission chambers KNT-31, as well as thermometric monitoring of fuel-assembly heating by means of thermocouples installed directly in the fuel assemblies. The informativeness of the measurements was substantially improved by determining the volumetric energy-release fields using the neutron activation method with copper indicators in the critical state of the reactor.
+
+The following results were obtained:
+
+\begin{enumerate}
+\item The voiding effect of the cold reactor after fuel reloading was reduced by \qty{1.1}{\betaeff} and now amounts to \qty{2.9}{\betaeff}.
+
+\item The calculated estimate of the reduction of the voiding effect by \qty{1}{\betaeff} upon an increase of the reactivity margin by 20~rods, and by \qty{0.6}{\betaeff} upon installation of 30 additional absorbers (DP), was confirmed.
+
+\item Measurement of the rate of negative-reactivity insertion upon the drop of all rods extracted in the critical state (excluding the AZ rods) showed that, after repositioning the 78 upper limit switches, this rate is no less than \qty{0.6}{\betaeff\per\second} in the absence of partially immersed rods.
+
+Taking into account the partially immersed manual-control (RR) rods providing a reactivity margin of 45~rods, the rate of negative-reactivity insertion upon AZ-5 actuation is \qty{1}{\betaeff\per\second}.
+
+\item In none of the 12 rod-drop events from the upper limit switches during reactor shutdown (total number of rods dropped ranging from 26 to 114) was there any positive reactivity excursion.
+\end{enumerate}
+
+Assuming that the voiding effect is proportional to coolant density, we obtain that in the hot state with a reactivity margin of 45~rods the voiding effect (density change from \qty{0.78}{\gram\per\centi\metre\cubed} to zero) amounts to \qty{2.8}{\betaeff}, while the voiding effect at power (density change from \qty{0.5}{\gram\per\centi\metre\cubed} to zero) amounts to \qty{1.8}{\betaeff}.
+
+The above estimates are maximal.
+
+In the latter case, even under beyond-design-basis accident conditions for the first stage of the Chernobyl NPP (rupture of the MCP pressure header of \qty{1000}{\milli\metre} diameter), the voiding of the active zone -- occurring over a period measured in several seconds -- causes an increase in positive reactivity at a rate not exceeding \qty{0.9}{\betaeff\per\second}, which is compensated by the insertion of negative reactivity upon AZ actuation.
+
+In the event of such an accident at low power, when the positive reactivity released equals \qty{2.8}{\betaeff}, the rate of voiding decreases because of the increase in coolant mass within the active zone. The rate of this process during the first seconds does not exceed \qty{0.5}{\betaeff\per\second} and thereafter drops sharply.
+
+Thus, during voiding of the active zone arising from a rupture of large-diameter pipelines, reliable shutdown of the reactor is ensured.
+
+Pending the implementation of the reconstruction measures for the first-generation NPPs with RBMK-1000 reactors recommended by the IVTS decisions of 1984 (installation of check valves in all distribution group headers, modernization of the emergency cooling system, etc.), the maximum design-basis accident for the first stage of the Chernobyl NPP is taken to be a rupture of the downcomer pipeline of \qty{300}{\milli\metre} diameter. Under such an accident, reactor shutdown and cooling of the active zone by the emergency cooling system, the feedwater pumps, and the emergency feedwater pumps are ensured.
+
+Thus, the safety of first-generation RBMK reactors is improved upon completion of Stage~I of the ``Measures\ldots''.
+
+The effectiveness of this stage will be definitively evaluated after conducting analogous experiments at Unit~2 of the Chernobyl NPP, measuring the dynamic characteristics of the reactors of Units~1 and~2 at a power level of 50--70\,\% of rated power, and thoroughly analyzing the experimental results.
+
+Safety assurance must also be guaranteed by strict organizational measures to enforce adherence to the operating procedure and to strengthen production and technological discipline.
+
+The transition to fuel with 2.4\,\% enrichment, scheduled from 1987, will further enhance the safety of RBMK reactors.
+
+\medskip
+
+\noindent\textit{From Enterprise P.O.~Box A-1758:} \hfill \textit{From Enterprise P.O.~Box A-7291:}\\
+N.~N.~Kuzmin \hfill L.~V.~Reshetin\\
+V.~P.~Kevrolev \hfill A.~P.~Sirotkin\\
+\null\hfill V.~P.~Vasilevsky\\
+\null\hfill S.~G.~Ukharov
+
 \chapter*{Appendix 2: Chronology of the Technological Process at Unit 4 of the Chernobyl Nuclear Power Plant}
 \addcontentsline{toc}{chapter}{Appendix 2: Chronology of the Technological Process at Unit 4 of the Chernobyl Nuclear Power Plant}
 \markboth{Appendix 2: Chronology of the Technological Process at Unit 4 of the Chernobyl Nuclear Power Plant}{}
 
 \begin{center}
-\textbf{Table I}\\
+\textbf{Table I-I}\\
 \textbf{Chronology of the Technological Process at Unit 4 of the Chernobyl NPP}
 \end{center}
 
@@ -5062,7 +5249,7 @@ The absurdity of the charge was evident to any impartial observer. The court cou
 \textbf{--- Very well; yet in the public imagination you appear as the man who embarked upon some fantastical experiment on an operating industrial reactor. Will you explain the essence of that experiment?}
 
 \noindent
---- The authors of the programme, were Gennady Petrovich Metlenko, a representative of Dontechenergo, and myself. He had previously participated in the testing of numerous electrical systems at the station. The core of the idea was to employ the kinetic energy stored in the Turbogenerator rotor as it coasted down.
+--- The authors of the programme were Gennady Petrovich Metlenko, a representative of Dontechenergo, and myself. He had previously participated in the testing of numerous electrical systems at the station. The core of the idea was to employ the kinetic energy stored in the Turbogenerator rotor as it coasted down.
 
 Each unit of the station is equipped with an Emergency Core Cooling System, whose purpose is to avert core meltdown in a design-basis accident -- that is, in the maximum credible accident, assumed to be the rupture of a large-diameter pipeline in the primary circuit. When, under such an accident, electrical power is lost in the supply system, the generator, while decelerating, continues to feed the feedwater pumps. Thus it is intended to provide water to the reactor until the long-term emergency cooling system becomes operative. Our aim was to ascertain whether the generator's rundown duration sufficed for this purpose.
 
@@ -5075,7 +5262,7 @@ No one wishes to acknowledge the absurdity of such a reproach. The court experts
 \textbf{--- You frequently refer to the court experts. As we understand it, the court's judgment depended directly upon them. Who, then, were these people?}
 
 \noindent
---- The overwhelming majority, were representatives of the very same design and construction organisations whose honour was directly at stake. To allow them to participate in a judicial investigation of the causes of the catastrophe was, in my view, profoundly immoral. Their conclusions collapse at the slightest scrutiny. The experimental programme had been examined by many specialists; to declare it incompetent is untenable. That is the first point.
+--- The overwhelming majority were representatives of the very same design and construction organisations whose honour was directly at stake. To allow them to participate in a judicial investigation of the causes of the catastrophe was, in my view, profoundly immoral. Their conclusions collapse at the slightest scrutiny. The experimental programme had been examined by many specialists; to declare it incompetent is untenable. That is the first point.
 
 Second: it is said the programme had not been coordinated with the supervisory authorities. This is true; yet the instructions then in force required no such coordination.
 
@@ -5133,7 +5320,7 @@ Journalists were not admitted to that swift -- and, as is now indisputable, unju
 
 But no. All materials concerning the accident were sealed, even from those labouring in the nuclear industry. And now, as the truth at length strains toward the light, we discern precisely why. The ``Chernobyl six'' served merely as scapegoats, decoys meant to deflect the public gaze from more exalted personages. These latter, as had long been customary in the empire, did not sit upon the defendants' bench but stood behind it -- dictating their conclusions to the forensic -- technical experts whose judgments furnished the indictment. But let us proceed in order.
 
-Long before the catastrophe, V.\,P.~Volkov, head of the reliability and safety group for RBMK Nuclear Power Plants at the Kurchatov Institute of Atomic Energy, had submitted several memoranda to his chief, Academician A.\,P.~Aleksandrov, exposing the reactor's design defects. They were quietly shelved. When the explosion came, Volkov addressed himself to the nation's leadership, to the Procuracy of the USSR, and, naturally, to his immediate superiors, setting forth his own account of the accident -- an accident which, he affirmed, had been \textit{``caused not by the actions of the operating personnel but by the design of the core and by an incorrect understanding of the neutron physics processes occurring in it.''} Even then the specialist was not heeded. Yet Aleksandrov, though preoccupied by meetings of scientific-technical councils convened to determine the causes of the catastrophe, nevertheless found to find time to have Volkov dismissed.
+Long before the catastrophe, V.\,P.~Volkov, head of the reliability and safety group for RBMK Nuclear Power Plants at the Kurchatov Institute of Atomic Energy, had submitted several memoranda to his chief, Academician A.\,P.~Aleksandrov, exposing the reactor's design defects. They were quietly shelved. When the explosion came, Volkov addressed himself to the nation's leadership, to the Procuracy of the USSR, and, naturally, to his immediate superiors, setting forth his own account of the accident -- an accident which, he affirmed, had been \textit{``caused not by the actions of the operating personnel but by the design of the core and by an incorrect understanding of the neutron physics processes occurring in it.''} Even then the specialist was not heeded. Yet Aleksandrov, though preoccupied by meetings of scientific-technical councils convened to determine the causes of the catastrophe, nevertheless found time to have Volkov dismissed.
 
 Thus, brazenly and crudely, the truth concerning the real causes of the Chernobyl catastrophe was suppressed. But, as the proverb says, one cannot conceal an awl in a sack. Several documents now exist that overturn, root and branch, the scientific-technical foundations of the indictment brought against the Chernobyl ``six.'' Of these, the most salient is the report of the commission of the State Industrial Atomic and Energy Supervision of the former USSR, signed by Nikolai Shteinberg -- now Chairman of the State Committee of Ukraine for Nuclear and Radiation Safety -- and published last year.
 
@@ -5207,7 +5394,7 @@ In the course of the investigation of the case in Russia, information was obtain
 
 \ldots~When questioned as a witness, the deputy director of the Research and Design Institute of Power Engineering, Scientist V.~V.~Orlov, engaged in reactor-engineering problems, declared that the design deficiencies of the RBMK-1000 project which had manifested themselves in the Chernobyl accident were the result of shortcomings in the physical substantiation of the project and in the design of the reactor itself, which were realized in the accident as a consequence of the personnel's actions that failed to correspond to regulations\ldots
 
-Concerning the design and construction deficiencies of the RBMK-1000 reactor, Doctor of Technical Sciences B.~G.~Dubovsky, possessing extensive experience in the field of nuclear safety, testified that the primary cause of the accident was the designers' failure to comprehend the neutron processes and their errors in the design of the emergency protection\ldots~The actuation time of the Emergency Protection absorber rods exceeded \num{18}~seconds, whereas the development of accident processes in this reactor unfolds within \num{3}{4}~seconds.''
+Concerning the design and construction deficiencies of the RBMK-1000 reactor, Doctor of Technical Sciences B.~G.~Dubovsky, possessing extensive experience in the field of nuclear safety, testified that the primary cause of the accident was the designers' failure to comprehend the neutron processes and their errors in the design of the emergency protection\ldots~The actuation time of the Emergency Protection absorber rods exceeded \num{18}~seconds, whereas the development of accident processes in this reactor unfolds within 3--4~seconds.''
 
 He also testified that when he was still head of the Nuclear Safety Department at the Physics and Power Engineering Institute, his studies -- based on the accident at the Leningrad Nuclear Power Plant in 1975 -- led him to conclude that in the lower part of the RBMK-1000 reactor, because of the peculiarities of the neutron field in the core, a kind of separate explosive reactor arises\ldots~In Professor B. G. Dubovsky's view, the plant personnel were not at fault for the accident, which occurred solely because of design shortcomings in the reactor. According to Professor Dubovsky, the chief designer, Academician Dollezhal, failed to provide in this reactor type any device for venting steam in the event of damage to one or several channels, which led to the development of the accident\ldots
 
@@ -5286,7 +5473,7 @@ in modes of joint coast-down with the load of auxiliary systems
 Deputy Chief Engineer \hfill A. S. Dyatlov \\
 Head of PTO \hfill A. D. Gellerman \\
 Head of Electrical Shop \hfill A. T. Zinenko \\
-Head of CPSU Labor Protection Dept. of SAEN \hfill I. P. Aleksandrov \\
+Head of CHPNP SAEN \hfill I. P. Aleksandrov \\
 Head of Reactor Shop No. 2 \hfill A. P. Kovalenko \\
 Head of Turbine Shop \hfill L. A. Khoronzhuk \\
 Head of Instrumentation and Automation \hfill E. A. Borodavka \\
@@ -5325,6 +5512,7 @@ in the mode of joint coast-down with the load of auxiliary systems
     \hline
     2.4. & Turbogenerator TG-8 operates at normal excitation; coast-down units ARV-SD and ARV-VG are activated. & NS of Electrical Shop \\
     \hline
+    2.5. & Assemble the circuit for issuing the MPA signal to the electrical section of the stepped diesel-generator (DG) loading scheme and to the coast-down scheme on two sets of 4ShchANP-3 automation, as follows: on panel No.~2 (left side panel) of ChShch ANP-3, connect the contacts of the additionally installed button, routed to BSHU-4 (item PB-3), to terminals 10 (091-1) with 18 (09-1) and terminal 10 (01-1) with 36 (031-1), and also on panel No.~3 (left side panel) to terminals 10 (01-2) with 18 (09-2) and 10 (01-2) with 36 (031-2). & ETL \\
     \hline
     2.6. & Power supply to sections 8RA, 8RB, 8RNA is provided via operational input feeders. & NS of Electrical Shop \\
     \hline
@@ -5667,7 +5855,7 @@ P.\,V.~Vyrodov
 \begin{flushright}
 \textit{``For nothing is secret, that shall not be made manifest;\\
 neither any thing hid, that shall not be known and come abroad.''}\\
-(Luke~8{:}27)
+(Luke~8{:}17)
 \end{flushright}
 
 The years 1953--59 were the years of our youth, of our student days. Tolya was older than most of us by some five years. Yet even then he seemed to us a man seasoned by life's experience. He was always an authority among us, and we loved him. He was the mentor of our group.

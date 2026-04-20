@@ -58,6 +58,7 @@
 \DeclareSIUnit{\Wth}{Wth}  % watt thermal
 \DeclareSIUnit{\rem}{rem}  % Roentgen equivalent man
 \DeclareSIUnit{\Day}{day}  % spelled out day (as opposed to \day with is just 'd')
+\DeclareSIUnit{\Year}{yr}  % capitalised to avoid clash with TeX primitive \year
 \DeclareSIUnit{\rpm}{rpm}  % revolutions per minute
 \DeclareSIUnit{\roentgen}{R}
 \DeclareSIUnit{\atmosphere}{atm}
@@ -3144,7 +3145,7 @@ Under no circumstances should one conceal from the population the existence of p
 Here is how G.~Medvedev writes:
 
 \begin{personal}[From G.~Medvedev's \textit{The Chernobyl Notebook}]
-\textit{``The officer and soldiers are not wearing respirators; they hang on their necks. Illiteracy from poorly organized training\ldots~After all, future generations will come from these young men. Even \qty{1}{\roentgen\per\year} gives a \qty{50}{\percent} probability of mutation\ldots''}
+\textit{``The officer and soldiers are not wearing respirators; they hang on their necks. Illiteracy from poorly organized training\ldots~After all, future generations will come from these young men. Even \qty{1}{\roentgen\per\Year} gives a \qty{50}{\percent} probability of mutation\ldots''}
 \end{personal}
 
 This would indeed be terrible -- if it were true. The entire world proceeds on the assumption of five rem per year for professionals. But the number of such professionals is large. Not all receive the full permissible dose. Yet, for example, the repair personnel of reactor departments practically all receive that dose each year. If at five rem per year the mutation probability were what Medvedev asserts for one roentgen, then where are the anomalies? Why does neither the population nor the medical profession observe them? As with so much else, Medvedev's claim is conjured out of thin air.
@@ -3352,211 +3353,244 @@ It is long past time to say: \textit{the properties of the reactor were not the 
 
 \varthreestars
 
-A group of IAEA experts issued in 1986 the report INSAG-1 on the causes of the Chernobyl catastrophe, and seven years later released their corrected report, INSAG-7. Seven years is ample time for studying many investigations and forming one's own judgment. Upon the publication of INSAG-7, the journal ``Nuclear Engineering'' printed an article by Mr.~J.~Varley, ``Who Is to Blame for the Chernobyl Accident -- Mature Reflections of the International Nuclear Safety Advisory Group.'' Let us try to assess the maturity of the experts' reflections.
+In 1986, the IAEA's International Safety Advisory Group released INSAG-1, its report on the causes of the accident at Chernobyl. Seven years later the group's revised report on the accident, INSAG-7, appeared (see \textit{NEI} May 1993). Seven years is long enough to study a lot of research and to formulate an opinion. But how much closer to the truth does INSAG-7 bring us?
 
-\paragraph{1.\ On the subcooling of the coolant}
-For eight years an erroneous assertion has persisted: that owing to the high coolant flow rate, its subcooling at the inlet to the core decreased, boiling began at the very bottom of the core, and, as a consequence, thermohydraulic instability arose. The author pointed out this error as early as 1986, and later in a letter addressed to the Director of the IAEA.
+\section*{Subcooling of the coolant}
 
-\subparagraph{1.1.\ Report, §2.9.}
-\textit{``These conditions led to the onset of boiling in the lower part of the core or near it.''}
+For eight years now the erroneous assumption has been going the rounds that because of the high coolant flow rate, coolant subcooling at the core inlet was reduced, boiling began right at the bottom of the core, and this led to thermohydraulic instability. I pointed out the falsity of this assumption back in 1987, in a letter addressed to the Director General of the International Atomic Energy Agency.
 
-According to the Operating Manual, subcooling is the temperature difference between the water in the steam-drum separators and at the inlet to the core. It does indeed decrease with increasing flow rate, but at the same time the pressure at the core inlet increases and, accordingly, the boiling temperature increases (Fig.~1, Appendix). At low reactor power, boiling begins outside the core altogether, in the downcomer pipes, gradually descending as power rises. And the higher the flow, the higher the boundary at which boiling starts. Specifically, on 26 April, at a reactor power of \qty{200}{\mega\watt} (channel power in the central part of the core about \qty{160}{\mega\watt}), boiling began at the very top of the core (Table~1 and Fig.~2, Appendix).
-
-\subparagraph{1.2.\ Report, §5.2.3.}
-\textit{``The reactor was operated in a mode with coolant boiling in the core and at the same time with small or zero subcooling at the pump suction and at the core inlet. Such a mode by itself could have led to a destructive accident, ... given the positive reactivity feedbacks of the RBMK reactor.''}
-
-The reactor operates exclusively in a boiling mode, and according to the Operating Manual it is permitted to run with small, even zero, subcooling; see Chapter~9 of the Manual. This condition is mandatory, since such regimes cannot be avoided in principle -- they arise at every power increase and when the pressure in the separators decreases.
-
-An interesting position of the experts: to explain to the staff the destructive action of the positive feedback. Very well (the operators will know why they died or were maimed), but it would be better for the reactor to conform to design standards. If a reactor explodes in a regime that cannot be avoided, then there is only one conclusion -- a prohibition on operation. What is there to explain?
-
-On 26 April the subcooling was approximately one degree, and the pressure was slowly rising (Table~2, Appendix).
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.5\textwidth]{fig1.jpg}
-\caption{A plot of neutron power (normalized units; left y-axis) to time (seconds; x-axis), giving reactivity $\beta_\text{eff}$ (right y-axis). Dependence of reactivity and neutron power on time in the initial phase of the accident's development: ■ - reactivity; ▲ - neutron power.}
-\end{figure}
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.3\textwidth]{fig2.jpg}
-\caption{A plot of reactivity (y-axis, \unit{\percent}) to coolant density (x-axis, \unit{\gram\per\centi\meter\cubed}). Dependence of reactivity $\rho$ on coolant density $\gamma$: 1 - design calculations; 2 - actual dependence at the moment of the 26 April 1986 accident; 3 - current state after implementation of corrective measures.}
-\end{figure}
-
-\paragraph{2.\ On the operation of the Main Circulation Pumps}
-
-\subparagraph{2.1.}
-The experts have resurrected the long-discarded version of pump rundown. There was no loss of circulation:
-
-\begin{itemize}
-\item If the pumps did \textit{not} lose circulation when the pressure \textit{decreased}, why should they have lost it when the pressure \textit{increased}?
-\item The monitoring system recorded normal pump operation up to the very moment of the sharp power surge.
-\item The pumps supplied from the ``coasting'' generator could not have tripped -- there was no cause for it.
-\item Yet the first pumps to switch off were precisely these ``coasting'' pumps (see INSAG-7, Appendix~I, Table~I-I), and only thereafter those supplied from the backup. This clearly indicates that the abrupt power surge, and not any rundown, caused the cessation of coolant flow.
-\end{itemize}
-
-There are further arguments; but if these do not persuade the experts, then nothing will.
-
-\subparagraph{2.2.}
-That reactor indeed \textit{would} explode upon Main Circulation Pump trip. Such an outcome might occur upon rupture of the steam lines, upon the opening and failure to reseat of the main safety valves, or during a Loss-of-Coolant-Accident. But in all such cases the fault lies wholly with the designers.
-
-To conclude the discussion of the Main Circulation Pumps, let us note:
-
-\subparagraph{2.3.\ Report, §2.8.}
-\textit{``Moreover, since the coolant temperature on the path from the circulation pumps to the core inlet changes little, with very small subcooling the temperature within the pumps and at their suction approaches the boiling point.''}
-
-This is merely an ornate way of saying something simple: the suction temperature approaches the boiling point at high coolant flow because the coolant is less cooled by the feedwater, and because the greater head loss in the downcomer elevates the temperature (see Fig.~1, Appendix).
-
-\subparagraph{2.4.\ Report, §2.9.}
-\textit{``After shutdown of the turbine, the pumps driven by it began to decelerate, since the turbine speed diminished and the voltage of the associated generator fell. The decreasing flow through the core increased the steam content in the core and caused the initial positive reactivity feedback, which was at least part of the cause of the accident.''}
-
-\begin{itemize}
-    \item A \qty{10}{\percent} decrease in flow over \qty{36}{\second} of coast-down produces a reactivity increase easily compensated by the Automatic Regulator system. No power increase occurred.
-\item One need only consult the power graph submitted to the IAEA in 1986. The same appears in the Appendix, §1-4.6.2 (INSAG-7).
-\item If that were insufficient, the experts could have asked Group member E.~Burlakov, who could have provided the 1986 calculation of his colleague A.~Apresov (see Table~2, Appendix).
-\end{itemize}
-
-During coast-down the coolant density changed by \qty{6}{\kilogram\per\meter\cubed} (Table~2, Appendix), yielding a reactivity increase of roughly \num{24e-6}. Under actual conditions the rate of reactivity change is often several times greater.
-
-Thus a thought that is, in the abstract, correct, when divorced from data and elementary calculation, leads to unwarranted (indeed false) conclusions.
-
-Accordingly, questions concerning coolant subcooling, Main Circulation Pump rundown or coast-down, and even the turbine coast-down itself, bear no relation to the accident. Had the experiment been abandoned at the last moment, the result would have been the same.
-
-As is now clear, earlier occasions had brought the plant to the brink of catastrophe: following scrams there had been manifestations of (Signal of) Emergency Protection by Power (AZM) and (Signal of) Emergency Protection by Power Surge (AZS) signals dropping out. They \textit{should} not have appeared; they were dismissed as ``spurious'' for want of understanding. In fact, they were genuine power surges caused by the Emergency Protection system itself, unregistered by the SFCRE chart recorder because the silver detectors were too inert. By contrast, the AZM and AZS signals, driven by less inert ionisation chambers, did appear -- but there was no recorder for them. Compare this with 26~April: 01:23:40 a.m., AZ-5 was actuated, and after \qty{3}{\second} the AZM and AZS signals appeared.
-
-It is apt to note that in the Appendix, Chapter~II-2.5.3 (INSAG-7), states that one of the computational models does \textit{not} reproduce a runaway such that, on the third second after AZ-5 actuation, signals appear exceeding the limits on power and its rate of rise. Perhaps; but one must consider not three but nearly four seconds, since the recording interval is one second. Then (see Fig.~16.1) no contradiction remains. For clarity: between two events of 1994 and 1995 the interval may be two hours or two years minus two hours.
-
-\paragraph{3.\ Operational Reactivity Margin}
-
-The designers of the reactor, followed in due course by the IAEA experts, have gradually attributed to the operational reactivity margin (ORM) one function after another:
-
-\subparagraph{3.1.\ Power manoeuvrability}
-A natural and universal function for all reactors; described both in standard texts and in the \textit{Rules}.
-
-\subparagraph{3.2.\ Compensation of fuel burnup}
-Likewise a standard and universally recognised function.
-
-\subparagraph{3.3.\ Regulation of power distribution throughout the reactor volume}
-Also seemingly natural, given the ``continuous'' refuelling regime and the large core dimensions, although the RBMK is hardly the world's sole large reactor.
-
-\subparagraph{3.4.\ A guarantee of the operability of the reactor protection system}
-Curiously, the limitation is imposed not on the \textit{maximum} ORM -- which alone would be natural -- but on the \textit{minimum}.
-
-\subparagraph{3.5.\ Operability ensured only for a given ORM and only under a particular configuration of control rods}
-Here we cross the boundary of absurdity and enter the realm of a direct breach of design norms. The designers committed an evident error in creating rods that insert reactivity of opposite signs depending on the direction of motion. Immediately after the accident these rods were declared defective by all parties, including the designers; yet, astonishingly, the designers have found defenders among the experts.
-
-\noindent\textbf{INSAG Report, §5.1:} \textit{``A positive reactivity excursion could only occur as a result of a special configuration of the control rods.''}
-
-Such ``special configurations'' are many; the reactivity surge occurred solely because the rods themselves were faulty. With a correctly designed rod there are no ``special configurations'' and cannot be any. The question remains: why did the experts feel obliged to defend a defect long since repudiated?
-
-A final function now attributed to ORM is that of constraining the steam-void coefficient within prescribed limits.
-
-\noindent\textbf{INSAG Report, §4.2:} \textit{``During discussion it appeared that the operators were apparently unaware of another reason for the importance of the ORM, namely that it can strongly influence the steam and power coefficients.''}
-
-Perhaps the experts lacked information? They possessed it.
-
-On p.~45 of Appendix~I to INSAG-7 we read:
-
-\begin{personal}[From INSAG-7 (Appendix I):]
-\textit{``The second-generation RBMK units were initially loaded with \qty{2}{\percent} enriched fuel, but even with this enrichment, as burnup increased to \qtyrange[range-phrase=\text{--}]{1100}{1200}{\mega\Wd\per\tonne} and with the regulatory operational margin of \numrange[range-phrase=\text{--}]{26}{30} rods, the steam-void coefficient approached \qty{+5}{\betaeff}. Similar burnup existed at Unit~4 before the accident.''}
+\begin{personal}[INSAG-7 (§2.9):]
+\textit{``These conditions led to the onset of boiling at or near the bottom of the core.''}
 \end{personal}
 
-At such a steam-void coefficient the power coefficient reaches \qty{+0.6e-4}{\betaeff\per\mega\watt} above \qty{50}{\percent} power. At lower power it is even more positive.
+According to the Regulations, subcooling is the difference in water temperature in the drum separators and at the core inlet. It certainly does fall with an increase in coolant flow rate, but when this happens the pressure at the core inlet rises, and so also does the boiling temperature (see Figure~1). At low reactor power, boiling begins beyond the core anyway, in the steam-water communication (SWC) line pipework, and the location of boiling moves down gradually as power rises (Figure~1). The greater the flow rate, the higher the starting point for boiling. Specifically, on 26~April (the date of the accident), at a reactor power level of \qty{200}{\mega\watt} (power level in core centre channel around \qty{160}{\mega\watt}), boiling was beginning right at the top of the \qty{7}{\meter} high core (see Table~1 and Figure~2).
 
-\subparagraph{4.2.\ As N.~Laletin noted}
-For a uniformly burnt-out core the steam-void effect is roughly twice as large as for a core with the same \textit{average} burnup but heterogeneous distribution. Thus the end of the transition period (with virtually all Additional Absorbers removed) is more dangerous than steady-state refuelling. Exactly such a state existed at Unit~4: 1~additional absorber, \num{1}~empty channel, and \num{1659} assemblies with average burnup \qty{1180}{\mega\Wd\per\tonne}; \qty{75}{\percent} of them first-load assemblies burnt to \qtyrange{1150}{1700}{\mega\Wd\per\tonne}.
+\begin{personal}[INSAG-7 (§5.2.3):]
+\textit{``The reactor was operated with boiling of the coolant water in the core and at the same time with little or no subcooling at the pump intakes and at the core inlet. Such a mode of operation in itself could have led to a destructive accident \ldots{} in view of the characteristics of positive reactivity feedback of the RBMK reactor.''}
+\end{personal}
 
-The steam-void effect exceeded \qty{+5}{\betaeff}, and that alone sufficed for an explosion.
+The reactor is operated only in boiling mode, and, according to the regulations, may be operated with minimal or even zero subcooling -- see Regulations, Chapter~9. This condition is obligatory, since such operating conditions cannot be avoided in principle -- they occur with any rise in power, when the pressure falls in the separators.
 
-\subparagraph{4.3.\ INSAG Report, §2.1}
-\textit{``Therefore, although the steam-void coefficient varied widely from negative to positive depending on core composition and operating mode, the power coefficient under normal operating conditions remained negative. During the accident both the steam-void and the power coefficients became positive.''}
+The stance taken by the experts here is an interesting one: they explain the destructive effect of positive feedback to the station staff. Fine -- the operators will know why they died or were maimed; but it would have been better had the reactor conformed to its design norms. If the reactor explodes under operating conditions it is not possible to avoid, there is only one answer -- to prohibit operation. What need is there for explanation?
 
-If not to justify the designers, what is the purpose of this phrase?
+On 26~April subcooling was roughly \qty{1}{\celsius} and pressure was slowly building (see Table~2).
 
-According to the Regulations, ``normal'' modes included \textit{all} power levels from minimum controllable to nominal, with no time limits. If the experts meant that the power coefficient was negative at nominal power, that is true -- but utterly insufficient. Design rules require it to be negative at \textit{all} operational and accident conditions.
+\section*{Main circulation pumps}
 
-\paragraph{5.\ Additional Remarks on the INSAG-7 Report}
+The INSAG experts have reanimated the long-discredited theory of pump breakdown, due to loss of head and pump cavitation. But there was no circulation breakdown. If the pumps did not break down during pressure decrease, why did they break down during a rise in pressure? The monitoring system recorded proper operation of the pumps right up to the sudden power surge. Pumps powered by a generator that was running down could not in any way have suffered breakdown. There are no reasons why they should. The first to be switched off, though, were those very ``running down'' pumps (see INSAG-7, Annex~I, Table~I-I), then, powered from the back-up supply. This indicates that the cause of the cessation of coolant delivery was a sharp surge of power.
 
-\subparagraph{5.1.\ Report, §4.1:} \textit{``A SCRAM of the reactor before the sharp power excursion that led to the destruction of the reactor could, without doubt, have been a decisive factor contributing to that destruction.''}
+There is further evidence, but if this is not sufficient for the experts, I suppose nothing is going to convince them.
 
-Here the experts intimate that a power surge \textit{must have been impending}, and that the personnel either foresaw it, or else -- by a stroke of malign chance -- pressed the shutdown button immediately beforehand, thereby hastening or even predetermining the catastrophe.
+This reactor really did explode when the main circulation pumps were stopped. But this could have happened when the steam lines ruptured, on opening and failure to reseat of the main safety valves, during the maximum design accident\ldots{} The only people that can be blamed for this, though, are the reactor designers.
 
-This is a novel conjecture. Why did the experts not propose any cause for this alleged imminent surge, at least hypothetically? No commission discerned such a cause.
+Just to conclude the subject of the main circulation pumps:
 
-The present author, an eyewitness, states plainly: the SCRAM button was pressed in a calm situation. The testimonies of G.~Metlenko and A.~Kukhar say the same. Appendix~I, §1-4.9 of INSAG-7 acknowledges that the commission found \textit{no} reason for the AZ-5 actuation. There was but one: the intention to shut down the reactor upon completion of the work.
+\begin{personal}[INSAG-7 (§2.8):]
+\textit{``Furthermore, since there is not much change in fluid temperature between the coolant pumps and the core inlet, the temperature of the water in the pumps and at their intakes is near boiling if the subcooling is very small.''}
+\end{personal}
 
-The scram did not ``contribute'' to the destruction -- it \textit{caused} it.
+This is a strange sort of explanation instead of the straightforward and obvious one: the temperature at the pump intake approaches boiling point at a high coolant flow rate because of the lower level of cooling of it by the feed water and the increase in loss of pressure head in the downcomer (see Figure~1).
 
-\subparagraph{5.2.\ Report, §4.1:} \textit{``The rupture of a fuel channel would cause a sharp local increase of steam content due to the flashing of the coolant to steam; this would lead to a local rise in reactivity, which would initiate a propagating reactivity effect.''}
+\begin{personal}[INSAG-7 (§2.9):]
+\textit{``When the turbine was tripped, the four pumps it was powering began to slow down as the turbine speed was reduced and the associated generator voltage fell. This reduced rate of core flow caused the void content of the core to rise and caused an initial positive feedback of reactivity, which was at least in part the cause of the accident.''}
+\end{personal}
 
-The reactor contained far more ``traps'' for personnel than the experts enumerate. A channel rupture (one or two) is not among them. When a channel fails, water content in the core \textit{increases}; in addition, the water cools the graphite. Both effects reduce reactivity. To claim otherwise is to contradict elementary reactor physics.
+The fall by \qty{10}{\percent} in flow rate over the \qty{36}{\second} of rundown of the turbine caused a rise in reactivity which the automatic regulator was able to handle. There was no increase in power; it is sufficient to look at the power graph submitted to the IAEA in 1986. This is discussed in Annex~I of INSAG-7 (§I-4.6.2). If that is not enough, I could ask E.~V.~Burlakov of the Kurchatov (one of the expert advisors to INSAG), and he could present the 1986 calculations of his colleague A.~Apresov (see Table~2).
 
-\subparagraph{5.3.\ Report, §5.2.1:} \textit{``It had been asserted that prolonged operation of the reactor below \qty{700}{\mega\watt} was prohibited. This assertion was based on incorrect information. Such a prohibition ought to have existed, but at the time it did not.''}
+During the rundown period, the coolant density altered by \qty{6}{\kilogram\per\meter\cubed}, giving a rise in reactivity of the order of \num{24e-5}; under real conditions the rate of change of reactivity can be several times greater.
 
-That reactor could ``successfully'' explode even at \qty{700}{\mega\watt}. There existed \textit{no} safe power level -- merely levels more or less perilous. By contrast, a reactor conforming to design rules requires no such artificial limitation.
+Thus an idea that is true in principle can lead, if factual data and even the most basic calculations are ignored, to false conclusions.
 
-No technical justification existed for \qty{700}{\mega\watt} as a ``safe'' value. That figure acquired an almost mystical authority solely to create an appearance of operator fault.
+Questions concerning coolant subcooling, breakdown and rundown of main circulation pumps, and equally too the question of turbogenerator rundown itself, therefore have no bearing on the accident. If at the very last moment it had been decided not to carry out the experiment, the result would have been just the same.
 
-The \qty{700}{\mega\watt} level in the programme was set by the present author for collateral reasons. The test originally included functional checks of the main relief valves, requiring substantial steam flow. Since the turbine rundown test was scheduled last, and the reactor was to be shut down immediately afterwards, the level was chosen with preceding high-power work in mind.
+It is now clear that we had been on the verge of disaster several times before. Following triggering of the emergency protection, operators had on occasions noticed emergency power overshoot (AZM) and fast rate of power rise (AZS) signals. They should not have been there and they were taken as spurious because they could not be explained. But in reality these were power surges caused by the emergency protection, which were not recorded by the SKFRE (power density physical monitoring system) automatic recorder because of the slow response time of the silver transducers used. AZM and AZS signals were possible because these originated from ionisation chambers with a faster response time. But these unfortunately had no automatic recorder to go with them. Compare with 26~April: at 23~minutes 40~seconds the emergency protection was dropped using a button (AZ-5), and \qty{3}{\second} later the AZM and AZS signals appeared.
 
-After the unplanned power drop, the author limited the rise to \qty{200}{\mega\watt} -- sufficient for the test -- not because \qty{700}{\mega\watt} was unattainable. With a positive prompt power coefficient nothing prevents a rise in power. Moreover, \qty{200}{\mega\watt} was an ordinary, regulation-permitted level.
+This is the place to state the following. In Annex~II of INSAG-7, §II-2.5.3, it says that none of the calculation models reproduces a reactor power excursion where signals exceeding the set values for power and rate of power rise appear within three seconds of triggering of AZ-5. Maybe, but we need to look at not three, but almost four seconds, since the discreteness of recording is one second. Then look at Fig.~II-11, in Annex~II, and there is no contradiction. To clarify the above: between two events in 1994 and 1995 the time interval could be either two hours or two years minus two hours.
 
-\subparagraph{5.4.} Accident data and operating experience were not utterly ignored. After the 1975 accident at Leningrad Unit~1, the commission (E.~Kunegin et~al.) proposed in 1976:
+\section*{Operating reactivity margin}
+
+The RBMK reactor designers, and also the IAEA experts along with them, just keep piling onto the operating reactivity margin (ORM) parameter one function after another:
+
+\begin{enumerate}
+\item The potential for power manoeuvring.
+\item Fuel burnup compensation.
+\end{enumerate}
+
+These are functions natural to all reactors, and they are described in books and in regulations.
+
+\begin{enumerate}\setcounter{enumi}{2}
+\item Controlling power density over the volume of the reactor.
+\end{enumerate}
+
+Also a sort of natural function, on the basis of the ``continuous'' fuel reloading cycle and large size, although the RBMK is not the only large reactor.
+
+\begin{enumerate}\setcounter{enumi}{3}
+\item A guarantee that the reactor protection operates properly. At the same time the restriction is imposed not on the maximum, which would be natural, but on the minimum~(?).
+\item Not only is proper operation ensured at a certain operating reactivity margin, but a given rod configuration must continue to be maintained.
+\end{enumerate}
+
+This, however, is just a nonsense, and in violation of all design norms. The designers made an obvious error in rod design when the rods introduce reactivity of differing signs when moving in a single direction. Immediately after the accident the rods were acknowledged by everyone, including the reactor designers, as no good. But amazingly the designers were supported by the INSAG experts.
+
+\begin{personal}[INSAG-7 (§5.1):]
+\textit{``A particular configuration of control and safety rods was necessary for the positive scram to occur\ldots{}''}
+\end{personal}
+
+There are a large number of such ``particular configurations'', but the reactivity overshoot occurred solely as a result of the erroneous design of the rods. With a normal design there are no ``particular configurations'' and cannot be any.
+
+Question: why did the experts feel the need to defend a point that has long since been refuted?
+
+\begin{enumerate}\setcounter{enumi}{5}
+\item And finally, yet another function of ORM: keeping the steam void coefficient of reactivity within set limits.
+\end{enumerate}
+
+\begin{personal}[INSAG-7 (§4.2):]
+\textit{``In the discussion of the scenario, the operators seemed not to be aware of the other reason for the importance of the ORM, which was the extreme effect it could have on the void and power coefficients.''}
+\end{personal}
+
+True, the staff did not know -- where could they have got to know about it, if the reactor designers did not know? A.~Abagyan, Yu.~Cherkashov and others ``out of absentmindedness'' forgot to mention this when they became aware of it.
+
+Here the alteration to the operating reactivity margin occurs through poisoning of the reactor, in other words the appearance of xenon is compensated by rod withdrawal. Although the influence on the breeding ratio is of the same order, however, the effect on the void coefficient is not identical. And that is by no means obvious.
+
+But let us examine the effect anyway. The regulations give a magnitude for the operating reactivity margin of from 30 to 15 rods. A reduction to 15 rods cannot be blamed on the operators, because in fact there is no other way to operate. The operators overlooked (there was no means of observing) a fall in the operating reactivity margin to eight rods. So, they have 7 rods on their conscience. In an article by N.~Laletin (\textit{Atomnaya Energiya}, 1993, Vol.~74, No.~3), a change in the operating reactivity margin by 25 rods alters the void effect by \qty{0.5}{\percent}. Thus seven rods added \qty{0.14}{\percent}. That was bad, but it was not this addition that played the fatal role, it was the existing void effect of reactivity (\qtyrange{2.5}{3.0}{\percent}). You definitely do not have to be a top ranking international expert to understand this.
+
+After the accident, 80 additional absorbers were located in the core. Each additional absorber is equivalent to a control and safety system rod in terms of its influence on the void effect of reactivity. But even 80 was too few, and it was not possible to fit in more, since they are installed in the fuel channels and therefore reduce the number of fuel assemblies. Solely from necessity the operating reactivity margin was raised to \numrange{43}{48} rods with the fall in the margin restricted to 30 and no less. This margin is not needed for operation, and anyway the operator is forbidden from using it; he has 15 rods at his disposal, as before the accident. A large reactivity compensated by operational systems is a fairly odd way of improving safety. Strange how things are managed with the RBMK reactor. Before the accident it was the only reactor in the world which was especially nuclear-hazardous with a small reactivity margin.
+
+\section*{Void coefficient}
+
+Both in the INSAG experts' report and in other documents there is mention of the void coefficient of reactivity, whereas what should have been mentioned is the void coefficient of inadmissible magnitude. It turns out that after the accident at the Leningrad power station in 1975, the Scientific and Technical Council of the Ministry took a decision to set this at no more than \qty{0.5}{\percent}, a fact which the creators of the reactor ``successfully managed'' to forget. They were quite happy with the calculated curve~1 in Fig.~II-12 of INSAG-7 Annex~II (curve~1 of Figure~3 in this article).
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.45\textwidth]{fig2.jpg}
+\caption{Dependence of reactivity $\rho$ (\unit{\percent}) on coolant density $\gamma$ (\unit{\gram\per\centi\meter\cubed}): 1~-- design calculations; 2~-- actual dependence at the moment of the 26~April~1986 accident; 3~-- current state after implementation of corrective measures.}
+\end{figure}
+
+A few comments on this figure.
+
+Curve~1 does not guarantee safety -- the reactivity overshoot with a change in density to \qty{0.4}{\gram\per\centi\meter\cubed} is \qty{2}{\betaeff}. The error is the same as for a change in reactivity compensated by the control and safety system rods -- only the extreme states are considered.
+
+Curve~2 of Figure~3 is shown in INSAG-7 as the actual dependence at the same time of the accident on 26~April. This is a Jesuitical approach -- neither a lie nor the truth. A similar void effect existed at all RBMK reactors, and not only on 26~April. The curve was obtained several years prior to the accident by an employee of the Kurchatov Institute, V.~Ivanov, and was subsequently confirmed by measurements. The administration did not believe Ivanov. They understood that an explosion threatened, but they did not check this out either by calculation or by experiment. So there you have it. One might ask why Ivanov did not squeal? Only one person squealed, and that was V.~I.~Volkov, who was quickly disposed of with an invalidity pension.
+
+The INSAG experts too employ some dubious approaches.
+
+\begin{personal}[INSAG-7 (§4.2):]
+\textit{``Under the circumstances of the accident, the void coefficient increased to such an extent that it overwhelmed the other components of the power coefficient, and the power coefficient itself became positive.''}
+\end{personal}
+
+The sense of the phrase -- on 26~April some sort of special conditions were in play, so who brought them into being -- is understandable. The operators made the power coefficient positive because the operating reactivity margin was 8 rods. Really? Maybe the experts had no information, like in 1986? But they did have some.
+
+In Annex~I to INSAG-7, page~36, we read: \textit{``Second generation plants with the RBMK-1000 reactor (Leningrad units~3 and 4, Kursk units~3 and 4, Chernobyl units~3 and 4, Smolensk units~1 and 2) were loaded from the beginning with fuel enriched to \qty{2}{\percent} in uranium-235. However, even with that fuel enrichment, as fuel burnup increased to \qtyrange[range-phrase=\text{--}]{1100}{1200}{\mega\Wd\per\tonne} per fuel assembly, and with an authorised operating reactivity margin (ORM) corresponding to \numrange{26}{30} manual control rods, the void coefficient of reactivity approached \qty{+5}{\betaeff}. There were similar fuel burnups at Chernobyl unit~4 before the accident.''} Further, at such a void coefficient of reactivity, the power coefficient is \qty{+0.6e-4}{\betaeff\per\mega\watt} at a power greater than \qty{50}{\percent}. At lower power levels it is more positive still.
+
+In the article by N.~Laletin referred to above, it says: \textit{``It is significant that the void effect for a core with even burnup is roughly twice as great as for a core with the same average burnup but distributed over the fuel channels from zero up to roughly double the mean value. It follows from this that the state of the reactor at the end of the transition phase, when all additional absorbers are removed, is more hazardous than its state when reload fuel is installed, although this fuel is comparable in terms of mean burnup.''}
+
+(At the first fuelling of the reactor with fresh fuel assemblies, 240 additional absorbers are put into the core to take up the surplus reactivity.)
+
+The core of unit~4 was in fact at the end of the period: 1~additional absorber; 1~unfuelled channel; 1659~assemblies with an average burnup of \qty{1180}{\mega\Wd} per assembly. The bulk of the assemblies (\qty{75}{\percent}) were first-charge assemblies with a burnup of \qtyrange{1150}{1700}{\mega\Wd} per assembly.
+
+The void effect may be said to have been greater than \qty{+5}{\betaeff}, although that itself would have been quite enough for an explosion.
+
+And one question for the experts: was it the operators who ``made'' the fast power coefficient positive, or was it the designers?
+
+\begin{personal}[INSAG-7 (§2.1):]
+\textit{``Thus, although the void coefficient of reactivity varied over a wide range from negative to positive values as a function of the composition of the core and the operating regime of the reactor, the fast power coefficient remained negative under normal operating conditions. At the time of the accident, the void and power coefficients of reactivity were both positive.''}
+\end{personal}
+
+If it is not there to provide justification for the designers, then why is this phrase included at all?
+
+According to the regulations, normal operating conditions were taken to be all power levels from minimum monitorable to rated, and the operating time was not restricted anywhere.
+
+If the experts were trying to say that the power coefficient remained negative at rated power, that is true, but it is not nearly enough. The design norms require this for all operating and accident conditions.
+
+\section*{Further comments on INSAG-7}
+
+\begin{personal}[INSAG-7 (§4.1):]
+\textit{``The scram just before the sharp rise in power that destroyed the reactor may well have been the decisive contributory factor.''}
+\end{personal}
+
+The experts are saying, in other words, that a reactor power excursion had to occur, and that the staff either foresaw this, or else, quite by chance, dropped the protection rods immediately before the excursion, and thus either accelerated or even created the conditions for the disaster.
+
+This is something new. Why did the experts not tell us the cause of the preceding power excursion, or at least make a stab at it?
+
+Not one of the commissions have ever found the cause.
+
+I would like to state the following, as a witness to the event: the protection button was pressed in calm circumstances. There is also the evidence of G.~Metlenko and A.~Kukhar'. Annex~I of INSAG-7 says that the commission could find no reasons why the emergency protection rods were dropped. There was actually one reason for dropping the protection rods: a wish to shut down the reactor when work was finished.
+
+Dropping the protection did not ``facilitate'' the destruction of the reactor, it caused it.
+
+\begin{personal}[INSAG-7 (§4.1):]
+\textit{``Failure of a fuel channel would have been a cause of a sudden local increase in void fraction as the coolant flashed to steam; this would have led to a local reactivity increase which could have triggered a propagating reactivity effect.''}
+\end{personal}
+
+This reactor had many more ``traps'' lying in wait for the staff than listed by the experts. Channel rupture (one or two channels) is not among them.
+
+On channel rupture, the amount of water in the core will increase, and it will not matter whether it is in the form of steam or liquid. The water will also cool the graphite. Both mechanisms will lead to a fall in reactivity.
+
+\begin{personal}[INSAG-7 (§5.2.1):]
+\textit{``The statement was made that there was a proscription on continuous operation of the reactor at power levels below \qty{700}{\mega\watt}(th). This statement was based on incorrect information. There should have been such a proscription, but there was none at the time.''}
+\end{personal}
+
+This reactor ``managed to'' explode even at \qty{700}{\mega\watt}. There was no safe power level for it. There were only more or less hazardous levels. On the other hand a reactor meeting design norms does not need a restriction of this kind.
+
+There is no technical safety case for power levels over \qty{700}{\mega\watt}. It took on what can only be called a mystical aura (obliging academicians and scientists to make misleading statements before the whole world) solely in order to place blame on the staff.
+
+I set the \qty{700}{\mega\watt} level when I drew up the experimental programme at Chernobyl, and it was based on incidental considerations. At the time the programme was drawn up, it was assumed that we would be checking the main safety valves, for which considerable power was needed -- the capacity of a single valve is \qty{725}{\ton\per\hour} of steam. Since performance of the turbogenerator rundown programme was placed right at the end (because of having to place most of the mechanisms on reserve power -- these are the safety measures which the programme was criticised for lacking), and the reactor was being shutdown for this, in order not to have to wait for a fall in power, the level for the proposed preceding work was entered.
+
+After the unplanned reactor power dip, I took the decision to keep to a rise to \qty{200}{\mega\watt} in view of the adequacy of this, and not because of impossibility. Surely it is obvious that with a positive fast power coefficient there are no limitations on raising power?
+
+Of course it was borne in mind in taking this decision that \qty{200}{\mega\watt} is the usual power level permitted by the regulations.
+
+No-one could say that accident situations and operational data had not been analysed. Following the accident at Leningrad unit~1, for example, a commission (consisting of E.~Kunegin et~al.) issued the following recommendations in 1976:
+
 \begin{itemize}
-  \item reduction of the steam-void coefficient;
-  \item modification of the control-rod design;
-  \item creation of a fast-acting SCRAM.
+\item Void coefficient to be lowered.
+\item Design of control and safety system rods to be altered.
+\item Fast-acting emergency protection to be installed.
 \end{itemize}
 
-Likewise, once the positive-SCRAM-reactivity effect was discovered, a technical design for new rods existed by December 1984. Other proposals were on record.
+The situation was similar when it was discovered that the protection introduced positive reactivity. In December 1984 a new rod design was even prepared. There were other proposals too.
 
-Yet management resolutely ignored all of this -- among them IAEA experts Yu.~Cherkashov, V.~Sidorenko, and A.~Abagyan. Hence the negligible benefit of appointing high-ranking officials: they possessed the data, the computers, the reactor characteristics -- yet ignored the essential facts. By disregarding both design-stage defects and hazardous properties long evident in operation, the RBMK was condemned to destruction.
+All this, however, was determinedly ignored by the Soviet administration, including some of the experts recently advising the IAEA: Yu.~Cherkashov, V.~Sidorenko and A.~Abagyan. And this, to answer a point raised by James Varley (Editor of \textit{NEI}) in his May 1993 article on INSAG-7, is why there has been so little benefit from the inclusion of senior officials among the INSAG experts, despite the fact that they had access to equipment, computers, details of reactor characteristics etc.
 
-\paragraph{6.\ Causes of the Accident}
+In view of the fact that the Soviet nuclear administrators chose to ignore obviously hazardous physical characteristics, both built into the design from the start and identified during operation, the RBMK reactor was condemned to explode.
 
-The reactor violated more than three dozen design-norm articles -- ample reason for an explosion.
+\section*{Causes of the accident}
 
-Put bluntly: before the SCRAM the reactor was in the condition of an atomic bomb, yet not a single warning signal indicated it. By what means, then -- by smell, by touch -- were the personnel expected to discern this?
+The reactor did not meet the requirements of over 30 statutes in the design norms -- which was more than enough to cause an explosion.
 
-On 26~April the catastrophe resulted from the combined action of the SCRAM, owing to the defective control-rod design, and the positive prompt power coefficient. In other circumstances, either factor alone could have sufficed.
+Or let us look at it another way. Before the protection rods were dropped, the reactor was in the state of an atomic bomb, yet there was not so much as a warning signal. How could the staff have found out what was happening -- by smell, or touch?
 
-About the control rods nothing further need be said; the matter is clear. The power coefficient, however, demands attention. Above all, the steam-void effect must be re-evaluated in light of N.~Laletin's analysis (§4.2).
+The accident happened on 26~April because of the combined effect of the emergency protection, with its faulty rod design and the positive fast power coefficient of reactivity. In other situations, each of these factors on its own could have led to an accident.
 
-The RBMK was most dangerous at power levels up to roughly \qty{40}{\percent} -- specifics depending on coolant flow -- because of its large positive prompt power coefficient. Changes in coolant density (hence reactivity) per unit power are far greater at low power. Although reactivity is not linearly proportional to density, the qualitative behaviour remains.
+There is no sense in talking about the control and safety system rods, that is clear enough already.
 
-Before the accident no document discussed this regime. Only afterwards were studies undertaken at low power; see, for example, Kurchatov Institute Report No.~ZZR/1-1007-90 (Sept.\ 1990).
+But something must be said about the power coefficient. First and foremost, there is sense in considering the void effect in connection with N.~Laletin's article (cited above). Second, the RBMK reactor was at its most hazardous at power levels up to roughly \qty{40}{\percent}, depending on coolant flow rate, because of the large positive fast power coefficient. Variations in coolant density, and in reactivity too by association, are much greater in relation to a unit of power at lower power levels than at levels closer to rated power (see Figure~4). It is not, of course, possible to infer a direct dependence between the reactivity variation and density, but its nature will remain the same.
 
-After measures reducing the steam-void coefficient to \qty{0.8}{\betaeff}, the power coefficient at \qty{200}{\mega\watt} became $-6\text{-}10\times10^{-7}\,\unit{\betaeff\per\mega\watt}$. What was it when the steam-void coefficient was \qty{+5}{\betaeff}? And note: contrary to the experts' assertions, the danger increases as coolant flow \textit{decreases}.
+Before the accident, this was not mentioned in any document about the reactor. It was only after the accident that study of this at low power levels too began -- see, for example, the Kurchatov Institute report of September 1990 (accession number 33R/1-1007-90). After all the measures taken to bring the void coefficient of reactivity down to \qty{+0.8}{\betaeff}, the power coefficient at \qty{200}{\mega\watt} is \qty{-6e-7}{\betaeff\per\mega\watt}. What was it at a void coefficient of \qty{+5}{\betaeff}? Moreover, despite the assertions of the experts, the lower the coolant flow rate, the greater the hazard.
 
-\paragraph{7.\ Actions of the Personnel}
+\section*{Actions by staff}
 
-Before discussing the personnel's ``guilt,'' consider the primary fact: the reactor was destroyed by the \textit{emergency protection system}.
+Before talking about the guilt the staff must bear, stop and think: the reactor was blown up by the emergency protection!
 
-If Mr.~Varley concluded -- using the factual material of the appendices -- that the accusations are unjust, then he is correct. But such a conclusion is impossible from the INSAG report alone; indeed, it points in the opposite direction.
+If Varley drew his conclusion that it was not fair to blame the staff on the basis of the factual material in the Annexes to the report, then he was right. If however one looks at the comments of the INSAG experts themselves, this does not follow at all. In fact, the opposite is more the case.
 
-In 1986 V.~Legasov and A.~Abagyan suppressed the fact that the scram inserted positive reactivity -- so odious a fact that it could not be admitted. The experts now write that had they known, their opinion would have differed. They learned -- and still concluded by \textit{implicitly blaming} the operators (see §5.1 above). Even during the height of the anti-operator campaign, such equivocation had not been attempted.
+In 1986, for example, V.~Legasov and A.~Abagyan did not report the fact that the emergency protection had introduced positive reactivity. Presumably because this was considered unpalatable. The experts write that if they had known, the conclusion would have been different. They found out. And they came to a conclusion: they effectively blamed the staff for dropping the protection rods (see INSAG-7 §4.1, as quoted above). This sort of thing was not done even at the time when the staff were being most virulently blamed.
 
-\emph{Report, §6.6:} \textit{``Nevertheless, INSAG still holds the view that the operators' critical actions were for the most part erroneous.''}
+In §6.6 of INSAG-7 the experts write: \textit{``Yet INSAG remains of the opinion that critical actions of the operators were most ill-judged.''}
 
-Imagine a reactor conforming to the design norms. Which actions of the operators would then be ``erroneous'' or ``critical''? Why should the operators have compensated for design errors unknown to them?
+Now let us consider a reactor that meets design norms. Which operator actions are ill-judged, or critical? How and why should the operators have compensated for design errors they did not know about?
 
-Only the lack of legal grounds for prosecuting the staff forced Legasov and Abagyan, in 1986, to resort to outright falsehood. Their motives are intelligible. What is astonishing is how readily the experts adopted this line, assuming the role of accusers -- condemning people before the world for violating documents the experts themselves had never seen. Bound by their first report, they were compelled to maintain the same direction in the second.
+It was only because there was no legal basis for blaming the staff that V.~Legasov and A.~Abagyan were forced to resort to making the misleading statements they made in 1986. What is amazing is the promptness with which the INSAG experts grasped these incorrect statements and made their stand as public prosecutor.
 
-INSAG-7, like its predecessor, misinterprets processes; and even where its general statements are accurate, its tendentious framing renders them false. It cannot play a constructive role.
+Before the whole world, they accused people of violating documents that they themselves have never even seen. Bound by their 1st report, the INSAG experts were forced to keep to the same line in their 2nd.
 
-For the publication of Appendices~I and II the experts deserve thanks: the factual material is scrupulously correct and valuable. But the conclusions and evaluative judgements must be approached with utmost caution. Thus Appendix~II declares: \textit{``These characteristics of the reactor installation ensured reliable and effective RBMK operation in all regulated modes, and safety for all listed design-basis accidents in accordance with the approved design documentation.''}
+INSAG-7, like the first report, gives an inaccurate and simply false reading of events and processes, and in the tendentiousness of its exposition turns essentially true statements into false ones. It can have no positive role to play.
 
-This is demonstrably untrue:
+Nevertheless, INSAG should be thanked for publishing, as their Annexes, the 1991 Shteinberg Commission report on the accident and the 1991 report by a Working Group of USSR Experts. The factual material in these two Annexes is accurate, and for specialists certainly valuable. But care must be taken in reading the conclusions and assessments. In Annex~II, for example, we read: \textit{``These characteristics of the reactor plant~\ldots{} made for reliable and effective operation of the RBMK under all regulation conditions and ensured safety for the entire list of design accidents in accordance with the ratified design documentation.''} That this is not so does not need saying. But for the sake of completeness:
 
 \begin{itemize}
-    \item The list did \textit{not} include a main pipe break.
-    \item Under a main pipe break the reactor exploded.
+\item The designer missed something off this list (and he's clean?).
+\item At the maximum design accident the reactor exploded.
 \end{itemize}
-
-\medskip
-
-\noindent\textit{Former Deputy Chief Engineer Anatoly Dyatlov\\
-Kyiv, 1995}
 
 \chapter*{Appendix A: About some issues in the operation of atomic power stations in the USSR}
 \addcontentsline{toc}{chapter}{Appendix A: About some issues in the operation of atomic power stations in the USSR}
